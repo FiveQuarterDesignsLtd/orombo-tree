@@ -1,0 +1,19 @@
+/**********************
+  MAIN 
+***********************/
+
+main {
+  padding: 40px 0;
+  /* LOGIN */
+  .login-card {
+    min-width: 500px;
+    p {
+      margin: 0;
+      a {
+        font-weight: 500;
+        font-size: 0.75rem;
+        color: $orombogrey;
+      }
+    }
+  }
+}

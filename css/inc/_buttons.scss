@@ -1,27 +1,22 @@
-.btn-green {
-  background: $orombogreen;
+.btn-green, .btn-orange, .btn-grey, .btn-facebook, .btn-google {
   border: 0;
   border-radius: 4px;
   color: white;
-  padding-right: 95px;
-  padding-left: 95px;
+  width: 230px;
   text-transform: uppercase;
+}
+.btn-green {
+  background: $orombogreen;
 }
 .btn-orange {
   background: $oromboorange;
-  border: 0;
-  border-radius: 4px;
-  color: white;
-  padding-right: 95px;
-  padding-left: 95px;
-  text-transform: uppercase;
 }
 .btn-grey {
   background: lighten($orombogrey,50%);
-  border: 0;
-  border-radius: 4px;
-  color: $orombogrey;
-  padding-right: 95px;
-  padding-left: 95px;
-  text-transform: uppercase;
+}
+.btn-facebook {
+  background: $facebook;
+}
+.btn-google {
+  background: $google;
 }

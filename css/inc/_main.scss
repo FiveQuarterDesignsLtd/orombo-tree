@@ -36,5 +36,25 @@ main {
       }
     }
 
+    .user-fullname {
+      .user-name {
+        width: 49%;
+      }
+    }
+
+    .btn-group {
+      width: 100%;
+      .btn {
+        padding-top: 30px;
+        padding-bottom: 30px;
+      }
+      .btn-buyer {
+        background: darken($oromboorange, 10%);
+        &:hover {
+          background: darken($oromboorange, 15%);
+        }
+      }
+    }
+
   }
 }

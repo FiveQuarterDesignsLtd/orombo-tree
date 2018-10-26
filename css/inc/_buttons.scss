@@ -4,15 +4,25 @@
   color: white;
   width: 230px;
   text-transform: uppercase;
+  transition: all .5s ease;
 }
 .btn-green {
   background: $orombogreen;
+  &:hover {
+    background: darken($orombogreen,10%);
+  }
 }
 .btn-orange {
   background: $oromboorange;
+  &:hover {
+    background: darken($oromboorange,5%);
+  }
 }
 .btn-grey {
   background: lighten($orombogrey,50%);
+  &:hover {
+    background: darken($orombogrey,10%);
+  }
 }
 .btn-facebook {
   background: $facebook;

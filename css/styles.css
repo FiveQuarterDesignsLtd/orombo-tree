@@ -55,18 +55,32 @@ body .btn-green, body .btn-orange, body .btn-grey, body .btn-facebook, body .btn
   color: white;
   width: 230px;
   text-transform: uppercase;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
 }
 
 body .btn-green {
   background: #00A099;
 }
 
+body .btn-green:hover {
+  background: #006d68;
+}
+
 body .btn-orange {
   background: #F19100;
 }
 
+body .btn-orange:hover {
+  background: #d88200;
+}
+
 body .btn-grey {
   background: #bcbbb9;
+}
+
+body .btn-grey:hover {
+  background: #222221;
 }
 
 body .btn-facebook {
@@ -143,6 +157,27 @@ main .login-card .card-body-social p {
 
 main .login-card .card-body-social p:first-chils {
   margin-top: 0;
+}
+
+main .login-card .user-fullname .user-name {
+  width: 49%;
+}
+
+main .login-card .btn-group {
+  width: 100%;
+}
+
+main .login-card .btn-group .btn {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+main .login-card .btn-group .btn-buyer {
+  background: #be7200;
+}
+
+main .login-card .btn-group .btn-buyer:hover {
+  background: #a56300;
 }
 
 /**********************

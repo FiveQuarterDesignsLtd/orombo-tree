@@ -1,0 +1,27 @@
+.btn-green {
+  background: $orombogreen;
+  border: 0;
+  border-radius: 4px;
+  color: white;
+  padding-right: 95px;
+  padding-left: 95px;
+  text-transform: uppercase;
+}
+.btn-orange {
+  background: $oromboorange;
+  border: 0;
+  border-radius: 4px;
+  color: white;
+  padding-right: 95px;
+  padding-left: 95px;
+  text-transform: uppercase;
+}
+.btn-grey {
+  background: lighten($orombogrey,50%);
+  border: 0;
+  border-radius: 4px;
+  color: $orombogrey;
+  padding-right: 95px;
+  padding-left: 95px;
+  text-transform: uppercase;
+}

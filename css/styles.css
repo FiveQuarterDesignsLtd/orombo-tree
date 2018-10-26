@@ -1,0 +1,206 @@
+/**
+
+Project Name: Orombo Tree
+Author: Anmol Nandha - Five Quarter Designs
+Version: 1.0
+Description: The official stylesheet for the Orombo Tree application
+
+*/
+/**********************
+  FONTS 
+***********************/
+@import url("https://fonts.googleapis.com/css?family=Krub:200,300,400,500,600,700|Saira+Semi+Condensed:100,200,300,400,500,600,700");
+/**********************
+  GENERAL 
+***********************/
+body {
+  font-family: 'Saira Semi Condensed', sans-serif;
+  font-size: 16px;
+  height: 100vh;
+  background: white;
+  background: linear-gradient(-313deg, white 0%, rgba(128, 128, 128, 0.2) 100%);
+}
+
+body h1,
+body h2,
+body h3 {
+  font-family: 'Krub', sans-serif;
+}
+
+body form .form-group {
+  margin: 0;
+}
+
+body .card {
+  background: transparent;
+  border: 0;
+}
+
+body .card .card-header, body .card .card-body {
+  border-radius: 0;
+  background: white;
+}
+
+body .card .card-header {
+  font-size: 1.125rem;
+}
+
+body .card .card-body {
+  margin-top: 5px;
+}
+
+body .card .card-body-register {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-top: 0;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+body .btn-green {
+  background: #00A099;
+  border: 0;
+  border-radius: 4px;
+  color: white;
+  padding-right: 95px;
+  padding-left: 95px;
+  text-transform: uppercase;
+}
+
+body .btn-orange {
+  background: #F19100;
+  border: 0;
+  border-radius: 4px;
+  color: white;
+  padding-right: 95px;
+  padding-left: 95px;
+  text-transform: uppercase;
+}
+
+body .btn-grey {
+  background: #bcbbb9;
+  border: 0;
+  border-radius: 4px;
+  color: #3C3B3A;
+  padding-right: 95px;
+  padding-left: 95px;
+  text-transform: uppercase;
+}
+
+/**********************
+  NAVBAR 
+***********************/
+.navbar {
+  background: white;
+  -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+}
+
+.navbar .navbar-brand {
+  width: 189px;
+}
+
+.navbar .navbar-brand img {
+  width: 189px;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #3C3B3A;
+}
+
+.navbar .navbar-nav .nav-item .nav-link.nav-register, .navbar .navbar-nav .nav-item .nav-link.nav-login {
+  font-weight: 500;
+}
+
+.navbar .navbar-nav .nav-item .nav-link.nav-login {
+  color: #00A099;
+}
+
+/**********************
+  MAIN 
+***********************/
+main {
+  padding: 40px 0;
+  /* LOGIN */
+}
+
+main .login-card {
+  min-width: 500px;
+}
+
+main .login-card p {
+  margin: 0;
+}
+
+main .login-card p a {
+  font-weight: 500;
+  font-size: 0.75rem;
+  color: #3C3B3A;
+}
+
+/**********************
+  FOOTER 
+***********************/
+footer {
+  background: #3C3B3A;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+  color: rgba(255, 255, 255, 0.6);
+  position: fixed;
+  bottom: 0;
+}
+
+footer a {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+footer img {
+  width: 116px;
+}
+
+footer .footer-links {
+  margin: 30px auto;
+  width: 65%;
+}
+
+footer .footer-links .footer-links-col {
+  width: 33.33%;
+}
+
+footer .footer-links .footer-links-col ul {
+  margin: 0;
+  padding: 0;
+}
+
+footer .footer-links .footer-links-col ul li {
+  list-style: none;
+  text-align: center;
+}
+
+footer .footer-links .footer-links-col ul li a {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+footer .social-media {
+  width: 100%;
+}
+
+footer .social-media ul {
+  margin: 0 auto;
+  padding: 0;
+}
+
+footer .social-media ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+footer .social-media ul li a {
+  padding-left: 20px;
+  padding-right: 10px;
+  font-size: 2.25rem;
+}
+/*# sourceMappingURL=styles.css.map */

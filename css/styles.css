@@ -132,6 +132,7 @@ main {
 
 main .login-card {
   min-width: 500px;
+  max-width: 501px;
 }
 
 main .login-card p {

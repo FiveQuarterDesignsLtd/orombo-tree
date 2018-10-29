@@ -1,4 +1,4 @@
-.btn-green, .btn-orange, .btn-grey, .btn-facebook, .btn-google {
+.btn-green, .btn-orange, .btn-grey, .btn-facebook, .btn-google, .btn-linkedin {
   border: 0;
   border-radius: 4px;
   color: white;
@@ -29,4 +29,7 @@
 }
 .btn-google {
   background: $google;
+}
+.btn-linkedin {
+  background: $linkedin;
 }

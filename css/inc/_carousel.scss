@@ -1,0 +1,50 @@
+.carousel {
+  background: rgb(31, 137, 133);
+  background: linear-gradient(307deg, rgba(31, 137, 133, 1) 0%, rgba(128, 213, 209, 1) 100%);
+
+  .carousel-item {
+    img {
+      opacity: 0;
+      animation: carousel-img 2s ease-out .5s 1;
+      animation-fill-mode: forwards;
+    }
+    .carousel-caption {
+      width: 1140px;
+      text-align: left;
+      margin: auto;
+      padding-left: 15px;
+      padding-right: 15px;
+
+      h1,
+      p {
+        opacity: 0;
+        font-family: 'Saira Semi Condensed', sans-serif;
+        font-weight: 400;
+        width: 665px;
+        position: relative;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+        animation: carousel-title 1s ease-out 1s 1;
+        animation-fill-mode: forwards;
+      }
+
+      p {
+        font-size: 1.25rem;
+        animation: carousel-title 1s ease-out 1.5s 1;
+        animation-fill-mode: forwards;
+      }
+
+      .btn-orange {
+        position: relative;
+        opacity: 0;
+        animation: carousel-title 1s ease-out 2s 1;
+        animation-fill-mode: forwards;
+        -webkit-box-shadow: 0px 13px 16px 0px rgba(0, 160, 153, 1);
+        -moz-box-shadow: 0px 13px 16px 0px rgba(0, 160, 153, 1);
+        box-shadow: 0px 13px 16px 0px rgba(0, 160, 153, 1);
+      }
+    }
+  }
+}

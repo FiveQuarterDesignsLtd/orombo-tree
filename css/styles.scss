@@ -10,6 +10,8 @@ Description: The official stylesheet for the Orombo Tree application
 
 @import 'inc/_fonts';
 
+@import 'inc/_animation';
+
 /**********************
   GENERAL 
 ***********************/
@@ -31,6 +33,8 @@ body {
   @import 'inc/_card';
 
   @import 'inc/_buttons';
+
+  @import 'inc/_carousel';
 }
 
 @import 'inc/_navbar';

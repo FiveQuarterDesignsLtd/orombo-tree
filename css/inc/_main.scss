@@ -3,7 +3,6 @@
 ***********************/
 
 main {
-  padding: 0 0 40px;
 
   .area-title {
     h1 {
@@ -66,24 +65,82 @@ main {
     background: url(../../img/service-bg@2x.png) right 20px no-repeat;
     background-size: 25%;
     background-color: white;
+
     .card {
       width: 600px;
       background: transparent;
       flex-direction: row;
+
       .card-img {
         width: 91px;
+
         img {
           width: 91px;
         }
       }
+
       .card-body {
         .card-title {
           font-weight: 400;
           font-size: 2.625rem;
           text-transform: uppercase;
         }
+
         .card-text {
           font-size: 1.125rem
+        }
+      }
+    }
+  }
+
+  /* CATEGORIES */
+  .categories {
+    .category {
+      height: 200px;
+      width: 25%;
+
+      &.developers {
+        background: url(../../img/developers-img.jpg);
+        background-size: cover;
+      }
+
+      &.creatives {
+        background: url(../../img/creatives-img.jpg);
+        background-size: cover;
+      }
+
+      &.writers {
+        background: url(../../img/writers-img.jpg);
+        background-size: cover;
+      }
+
+      &.seo {
+        background: url(../../img/seo-img.jpg);
+        background-size: cover;
+      }
+
+      h1 {
+        display: block;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+
+        a {
+          font-family: 'Saira Semi Condensed', sans-serif;
+          font-weight: 400;
+          font-size: 1.875rem;
+          text-transform: uppercase;
+          color: $orombogrey;
+          border-radius: 25px;
+          width: 100%;
+          text-align: center;
+          transition: ease .5s all;
+
+          &:hover {
+            text-decoration: none;
+            color: white;
+            background-color: rgba(black, .3);
+          }
         }
       }
     }

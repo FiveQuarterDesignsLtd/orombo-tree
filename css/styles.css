@@ -137,6 +137,11 @@ body .btn-linkedin {
 body .carousel {
   background: #1f8985;
   background: linear-gradient(307deg, #1f8985 0%, #80d5d1 100%);
+  max-height: 400px;
+}
+
+body .carousel .carousel-item {
+  max-height: 400px;
 }
 
 body .carousel .carousel-item img {
@@ -234,9 +239,9 @@ body .carousel .carousel-item .carousel-caption .btn-orange {
   MAIN 
 ***********************/
 main {
-  padding: 0 0 40px;
   /* HOW IT WORKS */
   /* SERVICES */
+  /* CATEGORIES */
   /* LOGIN */
 }
 
@@ -321,6 +326,57 @@ main .services .card .card-body .card-title {
 
 main .services .card .card-body .card-text {
   font-size: 1.125rem;
+}
+
+main .categories .category {
+  height: 200px;
+  width: 25%;
+}
+
+main .categories .category.developers {
+  background: url(../../img/developers-img.jpg);
+  background-size: cover;
+}
+
+main .categories .category.creatives {
+  background: url(../../img/creatives-img.jpg);
+  background-size: cover;
+}
+
+main .categories .category.writers {
+  background: url(../../img/writers-img.jpg);
+  background-size: cover;
+}
+
+main .categories .category.seo {
+  background: url(../../img/seo-img.jpg);
+  background-size: cover;
+}
+
+main .categories .category h1 {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+main .categories .category h1 a {
+  font-family: 'Saira Semi Condensed', sans-serif;
+  font-weight: 400;
+  font-size: 1.875rem;
+  text-transform: uppercase;
+  color: #3C3B3A;
+  border-radius: 25px;
+  width: 100%;
+  text-align: center;
+  -webkit-transition: ease .5s all;
+  transition: ease .5s all;
+}
+
+main .categories .category h1 a:hover {
+  text-decoration: none;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 main .login-card {

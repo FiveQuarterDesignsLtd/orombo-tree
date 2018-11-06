@@ -1,8 +1,10 @@
 .carousel {
   background: rgb(31, 137, 133);
   background: linear-gradient(307deg, rgba(31, 137, 133, 1) 0%, rgba(128, 213, 209, 1) 100%);
+  max-height: 400px;
 
   .carousel-item {
+    max-height: 400px;
     img {
       opacity: 0;
       animation: carousel-img 2s ease-out .5s 1;

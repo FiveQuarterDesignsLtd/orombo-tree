@@ -60,6 +60,35 @@ main {
     }
   }
 
+  /* SERVICES */
+  .services {
+    padding: 40px 0 80px;
+    background: url(../../img/service-bg@2x.png) right 20px no-repeat;
+    background-size: 25%;
+    background-color: white;
+    .card {
+      width: 600px;
+      background: transparent;
+      flex-direction: row;
+      .card-img {
+        width: 91px;
+        img {
+          width: 91px;
+        }
+      }
+      .card-body {
+        .card-title {
+          font-weight: 400;
+          font-size: 2.625rem;
+          text-transform: uppercase;
+        }
+        .card-text {
+          font-size: 1.125rem
+        }
+      }
+    }
+  }
+
   /* LOGIN */
   .login-card {
     min-width: 500px;

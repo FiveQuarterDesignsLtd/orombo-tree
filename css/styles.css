@@ -236,6 +236,7 @@ body .carousel .carousel-item .carousel-caption .btn-orange {
 main {
   padding: 0 0 40px;
   /* HOW IT WORKS */
+  /* SERVICES */
   /* LOGIN */
 }
 
@@ -286,6 +287,40 @@ main .how-it-works .card .card-body hr {
 
 main .how-it-works .card .card-body .card-text {
   text-align: center;
+}
+
+main .services {
+  padding: 40px 0 80px;
+  background: url(../../img/service-bg@2x.png) right 20px no-repeat;
+  background-size: 25%;
+  background-color: white;
+}
+
+main .services .card {
+  width: 600px;
+  background: transparent;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+main .services .card .card-img {
+  width: 91px;
+}
+
+main .services .card .card-img img {
+  width: 91px;
+}
+
+main .services .card .card-body .card-title {
+  font-weight: 400;
+  font-size: 2.625rem;
+  text-transform: uppercase;
+}
+
+main .services .card .card-body .card-text {
+  font-size: 1.125rem;
 }
 
 main .login-card {

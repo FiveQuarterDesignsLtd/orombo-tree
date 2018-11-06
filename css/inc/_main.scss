@@ -3,7 +3,148 @@
 ***********************/
 
 main {
-  padding: 40px 0;
+
+  .area-title {
+    h1 {
+      text-transform: uppercase;
+      font-weight: 400;
+    }
+
+    hr {
+      width: 100px;
+      height: 4px;
+      border: 0;
+      background: $orombogrey;
+      display: inline-block;
+    }
+  }
+
+  /* HOW IT WORKS */
+  .how-it-works {
+    padding: 36px 0 56px;
+    background-color: #EDEDED;
+
+    .card {
+      padding-top: 20px;
+      padding-bottom: 30px;
+      background-color: white;
+      border-radius: 0;
+      -webkit-box-shadow: 0px 13px 16px 0px rgba(0, 0, 0, 0.36);
+      -moz-box-shadow: 0px 13px 16px 0px rgba(0, 0, 0, 0.36);
+      box-shadow: 0px 13px 16px 0px rgba(0, 0, 0, 0.36);
+
+      .card-img-top {
+        width: 50%;
+        margin: auto;
+      }
+
+      .card-body {
+        .card-title {
+          font-size: 1.25rem;
+          text-align: center;
+          text-transform: uppercase;
+        }
+
+        hr {
+          width: 50px;
+          height: 2px;
+          border: 0;
+          background: $orombogrey;
+        }
+
+        .card-text {
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  /* SERVICES */
+  .services {
+    padding: 40px 0 80px;
+    background: url(../../img/service-bg@2x.png) right 20px no-repeat;
+    background-size: 25%;
+    background-color: white;
+
+    .card {
+      width: 600px;
+      background: transparent;
+      flex-direction: row;
+
+      .card-img {
+        width: 91px;
+
+        img {
+          width: 91px;
+        }
+      }
+
+      .card-body {
+        .card-title {
+          font-weight: 400;
+          font-size: 2.625rem;
+          text-transform: uppercase;
+        }
+
+        .card-text {
+          font-size: 1.125rem
+        }
+      }
+    }
+  }
+
+  /* CATEGORIES */
+  .categories {
+    .category {
+      height: 200px;
+      width: 25%;
+
+      &.developers {
+        background: url(../../img/developers-img.jpg);
+        background-size: cover;
+      }
+
+      &.creatives {
+        background: url(../../img/creatives-img.jpg);
+        background-size: cover;
+      }
+
+      &.writers {
+        background: url(../../img/writers-img.jpg);
+        background-size: cover;
+      }
+
+      &.seo {
+        background: url(../../img/seo-img.jpg);
+        background-size: cover;
+      }
+
+      h1 {
+        display: block;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+
+        a {
+          font-family: 'Saira Semi Condensed', sans-serif;
+          font-weight: 400;
+          font-size: 1.875rem;
+          text-transform: uppercase;
+          color: $orombogrey;
+          border-radius: 25px;
+          width: 100%;
+          text-align: center;
+          transition: ease .5s all;
+
+          &:hover {
+            text-decoration: none;
+            color: white;
+            background-color: rgba(black, .3);
+          }
+        }
+      }
+    }
+  }
 
   /* LOGIN */
   .login-card {
@@ -45,12 +186,15 @@ main {
 
     .btn-group {
       width: 100%;
+
       .btn {
         padding-top: 30px;
         padding-bottom: 30px;
       }
+
       .btn-buyer {
         background: darken($oromboorange, 10%);
+
         &:hover {
           background: darken($oromboorange, 15%);
         }

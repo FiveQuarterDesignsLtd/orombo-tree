@@ -10,6 +10,45 @@ Description: The official stylesheet for the Orombo Tree application
   FONTS 
 ***********************/
 @import url("https://fonts.googleapis.com/css?family=Krub:200,300,400,500,600,700|Saira+Semi+Condensed:100,200,300,400,500,600,700");
+@-webkit-keyframes carousel-img {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes carousel-img {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes carousel-title {
+  0% {
+    left: -50px;
+    opacity: 0;
+  }
+  100% {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes carousel-title {
+  0% {
+    left: -50px;
+    opacity: 0;
+  }
+  100% {
+    left: 0;
+    opacity: 1;
+  }
+}
+
 /**********************
   GENERAL 
 ***********************/
@@ -51,7 +90,7 @@ body .card .card-body {
 
 body .btn-green, body .btn-orange, body .btn-grey, body .btn-facebook, body .btn-google, body .btn-linkedin {
   border: 0;
-  border-radius: 4px;
+  border-radius: 25px;
   color: white;
   width: 230px;
   text-transform: uppercase;
@@ -95,6 +134,68 @@ body .btn-linkedin {
   background: #0077B5;
 }
 
+body .carousel {
+  background: #1f8985;
+  background: linear-gradient(307deg, #1f8985 0%, #80d5d1 100%);
+  max-height: 400px;
+}
+
+body .carousel .carousel-item {
+  max-height: 400px;
+}
+
+body .carousel .carousel-item img {
+  opacity: 0;
+  -webkit-animation: carousel-img 2s ease-out .5s 1;
+          animation: carousel-img 2s ease-out .5s 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+body .carousel .carousel-item .carousel-caption {
+  width: 1140px;
+  text-align: left;
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+body .carousel .carousel-item .carousel-caption h1,
+body .carousel .carousel-item .carousel-caption p {
+  opacity: 0;
+  font-family: 'Saira Semi Condensed', sans-serif;
+  font-weight: 400;
+  width: 665px;
+  position: relative;
+}
+
+body .carousel .carousel-item .carousel-caption h1 {
+  font-size: 2.5rem;
+  -webkit-animation: carousel-title 1s ease-out 1s 1;
+          animation: carousel-title 1s ease-out 1s 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+body .carousel .carousel-item .carousel-caption p {
+  font-size: 1.25rem;
+  -webkit-animation: carousel-title 1s ease-out 1.5s 1;
+          animation: carousel-title 1s ease-out 1.5s 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+body .carousel .carousel-item .carousel-caption .btn-orange {
+  position: relative;
+  opacity: 0;
+  -webkit-animation: carousel-title 1s ease-out 2s 1;
+          animation: carousel-title 1s ease-out 2s 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-box-shadow: 0px 13px 16px 0px #00a099;
+  box-shadow: 0px 13px 16px 0px #00a099;
+}
+
 /**********************
   NAVBAR 
 ***********************/
@@ -116,22 +217,166 @@ body .btn-linkedin {
   font-weight: 300;
   text-transform: uppercase;
   color: #3C3B3A;
+  -webkit-transition: ease .5s all;
+  transition: ease .5s all;
 }
 
-.navbar .navbar-nav .nav-item .nav-link.nav-register, .navbar .navbar-nav .nav-item .nav-link.nav-login {
-  font-weight: 500;
-}
-
-.navbar .navbar-nav .nav-item .nav-link.nav-login {
+.navbar .navbar-nav .nav-item .nav-link.nav-signup-login {
   color: #00A099;
+  font-weight: 500;
+  border: 1px solid #00A099;
+  border-radius: 25px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.navbar .navbar-nav .nav-item .nav-link.nav-signup-login:hover {
+  background: #00A099;
+  color: white;
 }
 
 /**********************
   MAIN 
 ***********************/
 main {
-  padding: 40px 0;
+  /* HOW IT WORKS */
+  /* SERVICES */
+  /* CATEGORIES */
   /* LOGIN */
+}
+
+main .area-title h1 {
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+main .area-title hr {
+  width: 100px;
+  height: 4px;
+  border: 0;
+  background: #3C3B3A;
+  display: inline-block;
+}
+
+main .how-it-works {
+  padding: 36px 0 56px;
+  background-color: #EDEDED;
+}
+
+main .how-it-works .card {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  background-color: white;
+  border-radius: 0;
+  -webkit-box-shadow: 0px 13px 16px 0px rgba(0, 0, 0, 0.36);
+  box-shadow: 0px 13px 16px 0px rgba(0, 0, 0, 0.36);
+}
+
+main .how-it-works .card .card-img-top {
+  width: 50%;
+  margin: auto;
+}
+
+main .how-it-works .card .card-body .card-title {
+  font-size: 1.25rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+main .how-it-works .card .card-body hr {
+  width: 50px;
+  height: 2px;
+  border: 0;
+  background: #3C3B3A;
+}
+
+main .how-it-works .card .card-body .card-text {
+  text-align: center;
+}
+
+main .services {
+  padding: 40px 0 80px;
+  background: url(../../img/service-bg@2x.png) right 20px no-repeat;
+  background-size: 25%;
+  background-color: white;
+}
+
+main .services .card {
+  width: 600px;
+  background: transparent;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+main .services .card .card-img {
+  width: 91px;
+}
+
+main .services .card .card-img img {
+  width: 91px;
+}
+
+main .services .card .card-body .card-title {
+  font-weight: 400;
+  font-size: 2.625rem;
+  text-transform: uppercase;
+}
+
+main .services .card .card-body .card-text {
+  font-size: 1.125rem;
+}
+
+main .categories .category {
+  height: 200px;
+  width: 25%;
+}
+
+main .categories .category.developers {
+  background: url(../../img/developers-img.jpg);
+  background-size: cover;
+}
+
+main .categories .category.creatives {
+  background: url(../../img/creatives-img.jpg);
+  background-size: cover;
+}
+
+main .categories .category.writers {
+  background: url(../../img/writers-img.jpg);
+  background-size: cover;
+}
+
+main .categories .category.seo {
+  background: url(../../img/seo-img.jpg);
+  background-size: cover;
+}
+
+main .categories .category h1 {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+main .categories .category h1 a {
+  font-family: 'Saira Semi Condensed', sans-serif;
+  font-weight: 400;
+  font-size: 1.875rem;
+  text-transform: uppercase;
+  color: #3C3B3A;
+  border-radius: 25px;
+  width: 100%;
+  text-align: center;
+  -webkit-transition: ease .5s all;
+  transition: ease .5s all;
+}
+
+main .categories .category h1 a:hover {
+  text-decoration: none;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 main .login-card {

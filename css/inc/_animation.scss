@@ -1,0 +1,18 @@
+@keyframes carousel-img {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes carousel-title {
+  0% {
+    left: -50px;
+    opacity: 0;
+  }
+  100% {
+    left: 0;
+    opacity: 1;
+  }
+}

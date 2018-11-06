@@ -21,11 +21,18 @@
         font-weight: 300;
         text-transform: uppercase;
         color: $orombogrey;
-        &.nav-register, &.nav-login {
-          font-weight: 500;
-        }
-        &.nav-login {
+        transition: ease .5s all;
+        &.nav-signup-login {
           color: $orombogreen;
+          font-weight: 500;
+          border: 1px solid $orombogreen;
+          border-radius: 25px;
+          padding-left: 1rem;
+          padding-right: 1rem;
+          &:hover {
+            background: $orombogreen;
+            color: white;
+          }
         }
       }
     }

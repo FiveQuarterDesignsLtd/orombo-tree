@@ -219,8 +219,9 @@ main {
             width: 100%;
             left: auto;
             right: auto;
-            
-            h1, p {
+
+            h1,
+            p {
               font-family: 'Saira Semi Condensed', sans-serif;
               color: white;
             }
@@ -248,59 +249,86 @@ main {
   }
 
   /* LOGIN */
-  .login-card {
-    min-width: 500px;
-    max-width: 501px;
+  .login {
+    background: rgba($orombogrey, .1);
+    padding: 40px 0;
 
-    p {
-      margin: 0;
+    .login-card {
+      min-width: 500px;
+      max-width: 500px;
+      margin: auto;
 
-      a {
-        font-weight: 500;
-        font-size: 0.75rem;
-        color: $orombogrey;
-      }
-    }
-
-    .card-body-register {
-      padding-top: 15px;
-      padding-bottom: 15px;
-      margin-top: 0;
-      background: rgba(black, .05);
-    }
-
-    .card-body-social {
       p {
-        margin-top: 5px;
+        margin: 0;
 
-        &:first-chils {
-          margin-top: 0;
+        a {
+          font-weight: 500;
+          font-size: 0.75rem;
+          color: $orombogrey;
         }
       }
-    }
 
-    .user-fullname {
-      .user-name {
-        width: 49%;
-      }
-    }
-
-    .btn-group {
-      width: 100%;
-
-      .btn {
-        padding-top: 30px;
-        padding-bottom: 30px;
+      .card-body-register {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin-top: 0;
+        background: rgba(black, .05);
       }
 
-      .btn-buyer {
-        background: darken($oromboorange, 10%);
+      .card-body-social {
+        h1 {
+          font-weight: 500;
+          font-size: 1rem;
+          color: $orombogrey;
+          text-transform: uppercase;
+        }
 
-        &:hover {
-          background: darken($oromboorange, 15%);
+        ul {
+          margin: 0;
+          padding: 0;
+          display: flex;
+          justify-content: center;
+
+          li {
+            margin: 0 5px;
+            list-style: none;
+            display: inline-block;
+          }
+        }
+
+        p {
+          margin-top: 5px;
+
+          &:first-child {
+            margin-top: 0;
+          }
         }
       }
-    }
 
+      .user-fullname {
+        .user-name {
+          width: 49%;
+        }
+      }
+
+      .btn-group {
+        width: 100%;
+
+        .btn {
+          padding-top: 30px;
+          padding-bottom: 30px;
+        }
+
+        .btn-buyer {
+          background: darken($oromboorange, 10%);
+
+          &:hover {
+            background: darken($oromboorange, 15%);
+          }
+        }
+      }
+
+    }
   }
+
 }

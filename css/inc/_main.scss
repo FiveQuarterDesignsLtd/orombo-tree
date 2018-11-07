@@ -8,30 +8,23 @@ main {
     h1 {
       text-transform: uppercase;
       font-weight: 400;
-    }
-
-    hr {
-      width: 100px;
-      height: 4px;
-      border: 0;
-      background: $orombogrey;
-      display: inline-block;
+      text-align: center;
+      margin-bottom: 30px;
     }
   }
 
   /* HOW IT WORKS */
   .how-it-works {
     padding: 36px 0 56px;
-    background-color: #EDEDED;
 
     .card {
       padding-top: 20px;
       padding-bottom: 30px;
-      background-color: white;
+      background-color: transparent;
       border-radius: 0;
-      -webkit-box-shadow: 0px 13px 16px 0px rgba(0, 0, 0, 0.36);
-      -moz-box-shadow: 0px 13px 16px 0px rgba(0, 0, 0, 0.36);
-      box-shadow: 0px 13px 16px 0px rgba(0, 0, 0, 0.36);
+      // -webkit-box-shadow: 0px 13px 16px 0px rgba(0, 0, 0, 0.36);
+      // -moz-box-shadow: 0px 13px 16px 0px rgba(0, 0, 0, 0.36);
+      // box-shadow: 0px 13px 16px 0px rgba(0, 0, 0, 0.36);
 
       .card-img-top {
         width: 50%;
@@ -39,6 +32,8 @@ main {
       }
 
       .card-body {
+        background: transparent;
+
         .card-title {
           font-size: 1.25rem;
           text-align: center;
@@ -63,7 +58,7 @@ main {
   .services {
     padding: 40px 0 80px;
     background: url(../../img/service-bg@2x.png) right 20px no-repeat;
-    background-size: 25%;
+    background-size: 20%;
     background-color: white;
 
     .card {
@@ -72,17 +67,20 @@ main {
       flex-direction: row;
 
       .card-img {
-        width: 91px;
+        width: 45px;
 
         img {
-          width: 91px;
+          width: 45px;
         }
       }
 
       .card-body {
+        margin-top: 5px;
+        padding-top: 0;
+
         .card-title {
           font-weight: 400;
-          font-size: 2.625rem;
+          font-size: 2rem;
           text-transform: uppercase;
         }
 
@@ -95,51 +93,99 @@ main {
 
   /* CATEGORIES */
   .categories {
-    .category {
-      height: 200px;
-      width: 25%;
+    padding: 40px 0 60px;
+    background: rgba(black, .05);
 
-      &.developers {
-        background: url(../../img/developers-img.jpg);
-        background-size: cover;
+    .card {
+      background: white;
+      -webkit-box-shadow: 0px 13px 16px 0px rgba(0, 0, 0, 0.36);
+      -moz-box-shadow: 0px 13px 16px 0px rgba(0, 0, 0, 0.36);
+      box-shadow: 0px 13px 16px 0px rgba(0, 0, 0, 0.36);
+
+      .card-icon {
+        text-align: center;
+        padding: 20px;
+        padding-bottom: 0;
+        font-size: 2rem;
+        color: $orombogreen;
       }
 
-      &.creatives {
-        background: url(../../img/creatives-img.jpg);
-        background-size: cover;
-      }
+      .card-body {
+        margin-top: 0;
+        padding-top: 0;
 
-      &.writers {
-        background: url(../../img/writers-img.jpg);
-        background-size: cover;
-      }
+        .card-title {
+          a {
+            font-family: 'Saira Semi Condensed', sans-serif;
+            font-weight: 400;
+            font-size: 1rem;
+            text-transform: uppercase;
+            color: $orombogrey;
+            border-radius: 25px;
+            width: 100%;
+            text-align: center;
+            transition: ease .5s all;
+            padding-left: 10px;
+            padding-right: 10px;
 
-      &.seo {
-        background: url(../../img/seo-img.jpg);
-        background-size: cover;
+            &:hover {
+              text-decoration: none;
+              color: white;
+              background-color: $oromboorange;
+            }
+          }
+        }
       }
+    }
+  }
 
-      h1 {
-        display: block;
-        width: 100%;
+  /* TESTIMONIALS */
+  .testimonials {
+    padding: 30px 0;
+    background: rgb(31, 137, 133);
+    background: linear-gradient(90deg, rgba(31, 137, 133, 1) 0%, rgba(128, 213, 209, 1) 100%);
+
+    .testimonial {
+      background: url(../../img/testmonial-bg@2x.png);
+      background-size: 100%;
+      width: 888px;
+      height: 366px;
+      margin: auto;
+
+      .testimonial-carousel {
+        width: 90%;
         height: 100%;
-        margin: 0;
-
-        a {
-          font-family: 'Saira Semi Condensed', sans-serif;
-          font-weight: 400;
-          font-size: 1.875rem;
-          text-transform: uppercase;
-          color: $orombogrey;
-          border-radius: 25px;
-          width: 100%;
-          text-align: center;
-          transition: ease .5s all;
-
-          &:hover {
-            text-decoration: none;
-            color: white;
-            background-color: rgba(black, .3);
+        margin: auto;
+        background: white;
+        border-radius: 10px;
+        -webkit-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.36);
+        -moz-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.36);
+        box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.36);
+        .carousel {
+          background: transparent;
+          .carousel-item {
+            .carousel-caption {
+              width: 100%;
+              position: relative;
+              left: auto;
+              right: auto;
+              h1 {
+                color: $orombogrey;
+                font-size: 1.25rem;
+                font-weight: 500;
+                text-align: center;
+                width: 90%;
+                margin: auto;
+              }
+              p {
+                margin-top: 20px;
+                color: $orombogrey;
+                font-size: 1rem;
+                text-align: center;
+                width: 90%;
+                margin: auto;
+              }
+            }
           }
         }
       }

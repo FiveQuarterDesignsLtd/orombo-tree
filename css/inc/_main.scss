@@ -58,7 +58,7 @@ main {
   .services {
     padding: 40px 0 80px;
     background: url(../../img/service-bg@2x.png) right 20px no-repeat;
-    background-size: 25%;
+    background-size: 20%;
     background-color: white;
 
     .card {
@@ -67,17 +67,20 @@ main {
       flex-direction: row;
 
       .card-img {
-        width: 91px;
+        width: 45px;
 
         img {
-          width: 91px;
+          width: 45px;
         }
       }
 
       .card-body {
+        margin-top: 5px;
+        padding-top: 0;
+
         .card-title {
           font-weight: 400;
-          font-size: 2.625rem;
+          font-size: 2rem;
           text-transform: uppercase;
         }
 
@@ -109,7 +112,8 @@ main {
 
       .card-body {
         margin-top: 0;
-        padding-top:0;
+        padding-top: 0;
+
         .card-title {
           a {
             font-family: 'Saira Semi Condensed', sans-serif;
@@ -123,10 +127,64 @@ main {
             transition: ease .5s all;
             padding-left: 10px;
             padding-right: 10px;
+
             &:hover {
               text-decoration: none;
               color: white;
               background-color: $oromboorange;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /* TESTIMONIALS */
+  .testimonials {
+    padding: 30px 0;
+    background: rgb(31, 137, 133);
+    background: linear-gradient(90deg, rgba(31, 137, 133, 1) 0%, rgba(128, 213, 209, 1) 100%);
+
+    .testimonial {
+      background: url(../../img/testmonial-bg@2x.png);
+      background-size: 100%;
+      width: 888px;
+      height: 366px;
+      margin: auto;
+
+      .testimonial-carousel {
+        width: 90%;
+        height: 100%;
+        margin: auto;
+        background: white;
+        border-radius: 10px;
+        -webkit-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.36);
+        -moz-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.36);
+        box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.36);
+        .carousel {
+          background: transparent;
+          .carousel-item {
+            .carousel-caption {
+              width: 100%;
+              position: relative;
+              left: auto;
+              right: auto;
+              h1 {
+                color: $orombogrey;
+                font-size: 1.25rem;
+                font-weight: 500;
+                text-align: center;
+                width: 90%;
+                margin: auto;
+              }
+              p {
+                margin-top: 20px;
+                color: $orombogrey;
+                font-size: 1rem;
+                text-align: center;
+                width: 90%;
+                margin: auto;
+              }
             }
           }
         }

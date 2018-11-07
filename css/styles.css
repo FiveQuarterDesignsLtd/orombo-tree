@@ -240,6 +240,7 @@ main {
   /* HOW IT WORKS */
   /* SERVICES */
   /* CATEGORIES */
+  /* TESTIMONIALS */
   /* LOGIN */
 }
 
@@ -290,7 +291,7 @@ main .how-it-works .card .card-body .card-text {
 main .services {
   padding: 40px 0 80px;
   background: url(../../img/service-bg@2x.png) right 20px no-repeat;
-  background-size: 25%;
+  background-size: 20%;
   background-color: white;
 }
 
@@ -304,16 +305,21 @@ main .services .card {
 }
 
 main .services .card .card-img {
-  width: 91px;
+  width: 45px;
 }
 
 main .services .card .card-img img {
-  width: 91px;
+  width: 45px;
+}
+
+main .services .card .card-body {
+  margin-top: 5px;
+  padding-top: 0;
 }
 
 main .services .card .card-body .card-title {
   font-weight: 400;
-  font-size: 2.625rem;
+  font-size: 2rem;
   text-transform: uppercase;
 }
 
@@ -364,6 +370,60 @@ main .categories .card .card-body .card-title a:hover {
   text-decoration: none;
   color: white;
   background-color: #F19100;
+}
+
+main .testimonials {
+  padding: 30px 0;
+  background: #1f8985;
+  background: -webkit-gradient(linear, left top, right top, from(#1f8985), to(#80d5d1));
+  background: linear-gradient(90deg, #1f8985 0%, #80d5d1 100%);
+}
+
+main .testimonials .testimonial {
+  background: url(../../img/testmonial-bg@2x.png);
+  background-size: 100%;
+  width: 888px;
+  height: 366px;
+  margin: auto;
+}
+
+main .testimonials .testimonial .testimonial-carousel {
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  background: white;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.36);
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.36);
+}
+
+main .testimonials .testimonial .testimonial-carousel .carousel {
+  background: transparent;
+}
+
+main .testimonials .testimonial .testimonial-carousel .carousel .carousel-item .carousel-caption {
+  width: 100%;
+  position: relative;
+  left: auto;
+  right: auto;
+}
+
+main .testimonials .testimonial .testimonial-carousel .carousel .carousel-item .carousel-caption h1 {
+  color: #3C3B3A;
+  font-size: 1.25rem;
+  font-weight: 500;
+  text-align: center;
+  width: 90%;
+  margin: auto;
+}
+
+main .testimonials .testimonial .testimonial-carousel .carousel .carousel-item .carousel-caption p {
+  margin-top: 20px;
+  color: #3C3B3A;
+  font-size: 1rem;
+  text-align: center;
+  width: 90%;
+  margin: auto;
 }
 
 main .login-card {

@@ -56,8 +56,6 @@ body {
   font-family: 'Saira Semi Condensed', sans-serif;
   font-size: 16px;
   height: 100vh;
-  background: white;
-  background: linear-gradient(-313deg, white 0%, rgba(128, 128, 128, 0.2) 100%);
 }
 
 body h1,
@@ -248,33 +246,28 @@ main {
 main .area-title h1 {
   text-transform: uppercase;
   font-weight: 400;
-}
-
-main .area-title hr {
-  width: 100px;
-  height: 4px;
-  border: 0;
-  background: #3C3B3A;
-  display: inline-block;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 main .how-it-works {
   padding: 36px 0 56px;
-  background-color: #EDEDED;
 }
 
 main .how-it-works .card {
   padding-top: 20px;
   padding-bottom: 30px;
-  background-color: white;
+  background-color: transparent;
   border-radius: 0;
-  -webkit-box-shadow: 0px 13px 16px 0px rgba(0, 0, 0, 0.36);
-  box-shadow: 0px 13px 16px 0px rgba(0, 0, 0, 0.36);
 }
 
 main .how-it-works .card .card-img-top {
   width: 50%;
   margin: auto;
+}
+
+main .how-it-works .card .card-body {
+  background: transparent;
 }
 
 main .how-it-works .card .card-body .card-title {
@@ -328,42 +321,34 @@ main .services .card .card-body .card-text {
   font-size: 1.125rem;
 }
 
-main .categories .category {
-  height: 200px;
-  width: 25%;
+main .categories {
+  padding: 40px 0 60px;
+  background: rgba(0, 0, 0, 0.05);
 }
 
-main .categories .category.developers {
-  background: url(../../img/developers-img.jpg);
-  background-size: cover;
+main .categories .card {
+  background: white;
+  -webkit-box-shadow: 0px 13px 16px 0px rgba(0, 0, 0, 0.36);
+  box-shadow: 0px 13px 16px 0px rgba(0, 0, 0, 0.36);
 }
 
-main .categories .category.creatives {
-  background: url(../../img/creatives-img.jpg);
-  background-size: cover;
+main .categories .card .card-icon {
+  text-align: center;
+  padding: 20px;
+  padding-bottom: 0;
+  font-size: 2rem;
+  color: #00A099;
 }
 
-main .categories .category.writers {
-  background: url(../../img/writers-img.jpg);
-  background-size: cover;
+main .categories .card .card-body {
+  margin-top: 0;
+  padding-top: 0;
 }
 
-main .categories .category.seo {
-  background: url(../../img/seo-img.jpg);
-  background-size: cover;
-}
-
-main .categories .category h1 {
-  display: block;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-}
-
-main .categories .category h1 a {
+main .categories .card .card-body .card-title a {
   font-family: 'Saira Semi Condensed', sans-serif;
   font-weight: 400;
-  font-size: 1.875rem;
+  font-size: 1rem;
   text-transform: uppercase;
   color: #3C3B3A;
   border-radius: 25px;
@@ -371,12 +356,14 @@ main .categories .category h1 a {
   text-align: center;
   -webkit-transition: ease .5s all;
   transition: ease .5s all;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
-main .categories .category h1 a:hover {
+main .categories .card .card-body .card-title a:hover {
   text-decoration: none;
   color: white;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: #F19100;
 }
 
 main .login-card {

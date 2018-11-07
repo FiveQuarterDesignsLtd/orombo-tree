@@ -31,20 +31,15 @@
       </button>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
+        <ul class="navbar-nav ml-auto">
           <li class="nav-item">
             <a class="nav-link" href="#">Browse</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">How it works</a>
           </li>
-        </ul>
-        <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link nav-register" href="#"><i class="fal fa-pencil"></i> Register</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link nav-login" href="#"><i class="fal fa-sign-in"></i> Login</a>
+            <a class="nav-link nav-signup-login" href="#">Sign Up / Login</a>
           </li>
         </ul>
       </div>
@@ -52,7 +47,7 @@
   </nav>
 
   <main>
-    <div class="container d-flex justify-content-center">
+    <div class="login">
       <div class="card login-card">
         <div class="card-header">
           LOG IN
@@ -86,15 +81,12 @@
           </form>
         </div>
         <div class="card-body card-body-social">
-          <p class="text-center">
-            <button class="btn btn-facebook"><i class="fab fa-facebook"></i> Login with Facebook</button>
-          </p>
-          <p class="text-center">
-            <button class="btn btn-google"><i class="fab fa-google"></i> Login with Google</button>
-          </p>
-          <p class="text-center">
-              <button class="btn btn-linkedin"><i class="fab fa-linkedin"></i> Login with LinkedIn</button>
-            </p>
+          <h1 class="text-center">Log in with</h1>
+          <ul>
+            <li><button class="btn btn-facebook"><i class="fab fa-facebook"></i></button></li>
+            <li><button class="btn btn-google"><i class="fab fa-google"></i></button></li>
+            <li><button class="btn btn-linkedin"><i class="fab fa-linkedin"></i></button></li>
+          </ul>
         </div>
         <div class="card-body-register">
           <p class="text-center">
@@ -102,6 +94,9 @@
           </p>
         </div>
       </div>
+    </div>
+    <div class="container d-flex justify-content-center">
+
     </div>
   </main>
 

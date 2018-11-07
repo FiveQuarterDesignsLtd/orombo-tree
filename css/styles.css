@@ -55,7 +55,7 @@ Description: The official stylesheet for the Orombo Tree application
 body {
   font-family: 'Saira Semi Condensed', sans-serif;
   font-size: 16px;
-  height: 100vh;
+  margin-bottom: 387px;
 }
 
 body h1,
@@ -122,14 +122,23 @@ body .btn-grey:hover {
 
 body .btn-facebook {
   background: #3B5998;
+  height: 36px;
+  width: 36px;
+  padding: 0;
 }
 
 body .btn-google {
   background: #DB4437;
+  height: 36px;
+  width: 36px;
+  padding: 0;
 }
 
 body .btn-linkedin {
   background: #0077B5;
+  height: 36px;
+  width: 36px;
+  padding: 0;
 }
 
 /**********************
@@ -398,7 +407,8 @@ main .testimonials .testimonial-carousel.carousel .carousel-item .carousel-capti
   right: auto;
 }
 
-main .testimonials .testimonial-carousel.carousel .carousel-item .carousel-caption h1, main .testimonials .testimonial-carousel.carousel .carousel-item .carousel-caption p {
+main .testimonials .testimonial-carousel.carousel .carousel-item .carousel-caption h1,
+main .testimonials .testimonial-carousel.carousel .carousel-item .carousel-caption p {
   font-family: 'Saira Semi Condensed', sans-serif;
   color: white;
 }
@@ -420,54 +430,84 @@ main .testimonials .testimonial-carousel.carousel .carousel-item .carousel-capti
   margin: auto;
 }
 
-main .login-card {
-  min-width: 500px;
-  max-width: 501px;
+main .login {
+  background: rgba(60, 59, 58, 0.1);
+  padding: 40px 0;
 }
 
-main .login-card p {
+main .login .login-card {
+  min-width: 500px;
+  max-width: 500px;
+  margin: auto;
+}
+
+main .login .login-card p {
   margin: 0;
 }
 
-main .login-card p a {
+main .login .login-card p a {
   font-weight: 500;
   font-size: 0.75rem;
   color: #3C3B3A;
 }
 
-main .login-card .card-body-register {
+main .login .login-card .card-body-register {
   padding-top: 15px;
   padding-bottom: 15px;
   margin-top: 0;
   background: rgba(0, 0, 0, 0.05);
 }
 
-main .login-card .card-body-social p {
+main .login .login-card .card-body-social h1 {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #3C3B3A;
+  text-transform: uppercase;
+}
+
+main .login .login-card .card-body-social ul {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .login .login-card .card-body-social ul li {
+  margin: 0 5px;
+  list-style: none;
+  display: inline-block;
+}
+
+main .login .login-card .card-body-social p {
   margin-top: 5px;
 }
 
-main .login-card .card-body-social p:first-chils {
+main .login .login-card .card-body-social p:first-child {
   margin-top: 0;
 }
 
-main .login-card .user-fullname .user-name {
+main .login .login-card .user-fullname .user-name {
   width: 49%;
 }
 
-main .login-card .btn-group {
+main .login .login-card .btn-group {
   width: 100%;
 }
 
-main .login-card .btn-group .btn {
+main .login .login-card .btn-group .btn {
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-main .login-card .btn-group .btn-buyer {
+main .login .login-card .btn-group .btn-buyer {
   background: #be7200;
 }
 
-main .login-card .btn-group .btn-buyer:hover {
+main .login .login-card .btn-group .btn-buyer:hover {
   background: #a56300;
 }
 
@@ -475,7 +515,10 @@ main .login-card .btn-group .btn-buyer:hover {
   FOOTER 
 ***********************/
 footer {
+  position: absolute;
   background: #3C3B3A;
+  height: 387px;
+  width: 100%;
   padding-top: 20px;
   padding-bottom: 20px;
   color: rgba(255, 255, 255, 0.6);

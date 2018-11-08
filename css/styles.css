@@ -52,6 +52,11 @@ Description: The official stylesheet for the Orombo Tree application
 /**********************
   GENERAL 
 ***********************/
+html {
+  position: relative;
+  min-height: 100%;
+}
+
 body {
   font-family: 'Saira Semi Condensed', sans-serif;
   font-size: 16px;
@@ -632,6 +637,7 @@ footer {
   width: 100%;
   padding-top: 20px;
   padding-bottom: 20px;
+  display: block;
   color: rgba(255, 255, 255, 0.6);
 }
 

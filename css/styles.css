@@ -237,6 +237,8 @@ main .home-carousel .carousel .carousel-item .carousel-caption {
   margin: auto;
   padding-left: 15px;
   padding-right: 15px;
+  -webkit-transition: ease .5s all;
+  transition: ease .5s all;
 }
 
 main .home-carousel .carousel .carousel-item .carousel-caption h1,
@@ -273,6 +275,61 @@ main .home-carousel .carousel .carousel-item .carousel-caption .btn-orange {
           animation-fill-mode: forwards;
   -webkit-box-shadow: 0px 13px 16px 0px #00a099;
   box-shadow: 0px 13px 16px 0px #00a099;
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  main .home-carousel .carousel .carousel-item .carousel-caption {
+    width: 70%;
+    padding-bottom: 0;
+  }
+  main .home-carousel .carousel .carousel-item .carousel-caption h1 {
+    font-size: 2rem;
+    width: 100%;
+  }
+  main .home-carousel .carousel .carousel-item .carousel-caption p {
+    font-size: 1rem;
+    width: 100%;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  main .home-carousel .carousel .carousel-item .carousel-caption {
+    width: 70%;
+    padding-bottom: 0;
+  }
+  main .home-carousel .carousel .carousel-item .carousel-caption h1 {
+    font-size: 2rem;
+    width: 100%;
+  }
+  main .home-carousel .carousel .carousel-item .carousel-caption p {
+    font-size: 1rem;
+    width: 100%;
+  }
+}
+
+@media (max-width: 575.98px) {
+  main .home-carousel .carousel .carousel-item {
+    min-height: 160px;
+  }
+  main .home-carousel .carousel .carousel-item img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  main .home-carousel .carousel .carousel-item .carousel-caption {
+    width: 70%;
+    padding-bottom: 0;
+  }
+  main .home-carousel .carousel .carousel-item .carousel-caption h1 {
+    font-size: 1.25rem;
+    width: 100%;
+  }
+  main .home-carousel .carousel .carousel-item .carousel-caption p {
+    display: none;
+  }
 }
 
 main .area-title h1 {

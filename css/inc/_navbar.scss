@@ -15,6 +15,22 @@
     }
   }
 
+  .navbar-toggler {
+    font-size: 2rem;
+    .navbar-toggler-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .navbar-collapse {
+    &.show {
+      margin-top: 10px;
+      border-top: 1px solid rgba($orombogrey, .5);
+    }
+  }
+
   .navbar-nav {
     .nav-item {
       .nav-link {

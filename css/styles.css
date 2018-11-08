@@ -415,6 +415,37 @@ main .services .card .card-body .card-text {
   font-size: 1.125rem;
 }
 
+@media (min-width: 768px) and (max-width: 991.98px) {
+  main .services {
+    background: url(../../img/service-bg@2x.png) 112% bottom no-repeat;
+    background-size: 40%;
+  }
+  main .services .card .card-body {
+    background: transparent;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  main .services {
+    background: none;
+  }
+  main .services .card .card-body {
+    background: transparent;
+  }
+}
+
+@media (max-width: 575.98px) {
+  main .services {
+    background: none;
+  }
+  main .services .card {
+    width: 100%;
+  }
+  main .services .card .card-body {
+    background: transparent;
+  }
+}
+
 main .categories {
   padding: 40px 0 60px;
   background: rgba(0, 0, 0, 0.05);

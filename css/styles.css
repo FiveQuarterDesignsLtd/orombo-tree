@@ -158,6 +158,27 @@ body .btn-linkedin {
   width: 189px;
 }
 
+.navbar .navbar-toggler {
+  font-size: 2rem;
+}
+
+.navbar .navbar-toggler .navbar-toggler-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.navbar .navbar-collapse.show {
+  margin-top: 10px;
+  border-top: 1px solid rgba(60, 59, 58, 0.5);
+}
+
 .navbar .navbar-nav .nav-item .nav-link {
   font-weight: 300;
   text-transform: uppercase;

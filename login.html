@@ -19,8 +19,93 @@
   <title>Orombo Tree</title>
 </head>
 
-<body>
-  <nav class="navbar navbar-expand-lg">
+<body class="bg">
+
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="img/orombotree-logo@2x.png" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Browse</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">How it works</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-signup-login" href="#">Sign Up / Login</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="login-register">
+      <div class="card">
+        <div class="card-header">
+          LOG IN
+        </div>
+        <div class="card-body">
+          <form>
+            <div class="form-group">
+              <label class="sr-only" for="txtUsername">Username or Email address</label>
+              <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text"><i class="fal fa-user"></i></div>
+                </div>
+                <input type="text" class="form-control" id="txtUsername" placeholder="Username or Email address">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="sr-only" for="txtPassword">Password</label>
+              <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text"><i class="fal fa-lock"></i></div>
+                </div>
+                <input type="password" class="form-control" id="txtPassword" placeholder="Password">
+              </div>
+            </div>
+            <div class="login-btns">
+              <button class="btn btn-green">Login</button>
+              <a href="http://">Forgotten Password?</a>
+            </div>
+          </form>
+        </div>
+        <div class="card-body">
+          <h1 class="card-title text-center">Or log in with</h1>
+          <ul class="social-login">
+            <li><button class="btn btn-facebook"><i class="fab fa-facebook"></i></button></li>
+            <li><button class="btn btn-google"><i class="fab fa-google"></i></button></li>
+            <li><button class="btn btn-linkedin"><i class="fab fa-linkedin"></i></button></li>
+          </ul>
+        </div>
+        <div class="card-body register">
+          <p class="text-center">
+            <button class="btn btn-grey">Register</button>
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <span class="text-muted">Place sticky footer content here.</span>
+    </div>
+  </footer>
+
+
+  <!-- <nav class="navbar navbar-expand-lg">
     <div class="container">
       <a class="navbar-brand" href="#">
         <img src="img/orombotree-logo@2x.png" alt="">
@@ -132,7 +217,7 @@
       </div>
       <p class="text-center">&copy;2018 - Orombo Tree</p>
     </div>
-  </footer>
+  </footer> -->
 
 
 

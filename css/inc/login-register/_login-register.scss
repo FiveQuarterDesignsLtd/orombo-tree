@@ -1,0 +1,43 @@
+/**********************
+  LOGIN/REGISTER 
+***********************/
+
+.login-register {
+
+  .card {
+    min-width: 500px;
+    max-width: 500px;
+    margin: auto;
+
+    .login-btns {
+      margin-top: 1rem;
+      display:flex;
+      align-items: center;
+      justify-content: space-between;
+      a {
+        color: $orombogreen;
+      }
+    }
+
+    ul {
+      &.social-login {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+
+        li {
+          margin: 0 5px;
+          list-style: none;
+          display: inline-block;
+        }
+      }
+    }
+
+    .register {
+      p {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

@@ -63,32 +63,14 @@ body {
   margin-bottom: 387px;
 }
 
+body.bg {
+  background: rgba(60, 59, 58, 0.1);
+}
+
 body h1,
 body h2,
 body h3 {
   font-family: 'Krub', sans-serif;
-}
-
-body form .form-group {
-  margin: 0;
-}
-
-body .card {
-  background: transparent;
-  border: 0;
-}
-
-body .card .card-header, body .card .card-body {
-  border-radius: 0;
-  background: white;
-}
-
-body .card .card-header {
-  font-size: 1.125rem;
-}
-
-body .card .card-body {
-  margin-top: 5px;
 }
 
 body .btn-green, body .btn-orange, body .btn-grey, body .btn-facebook, body .btn-google, body .btn-linkedin {
@@ -144,6 +126,50 @@ body .btn-linkedin {
   height: 36px;
   width: 36px;
   padding: 0;
+}
+
+body .form-group {
+  margin: 0;
+}
+
+body .form-group .input-group .input-group-text {
+  border-top-left-radius: 35px;
+  border-bottom-left-radius: 35px;
+  background: none;
+  border-right: 0;
+}
+
+body .form-group .input-group .form-control {
+  border-left: 0;
+  border-top-right-radius: 35px;
+  border-bottom-right-radius: 35px;
+}
+
+body .card {
+  background: transparent;
+  border: 0;
+}
+
+body .card .card-header,
+body .card .card-body {
+  border-radius: 0;
+  background: white;
+}
+
+body .card .card-header {
+  font-size: 1.125rem;
+}
+
+body .card .card-body {
+  margin-top: 5px;
+}
+
+body .card .card-body .card-title {
+  font-family: 'Saira Semi Condensed', sans-serif;
+  font-weight: 400;
+  font-size: 1.125rem;
+  color: #3C3B3A;
+  text-transform: uppercase;
 }
 
 /**********************
@@ -210,12 +236,17 @@ body .btn-linkedin {
   MAIN 
 ***********************/
 main {
+  padding: 40px 0;
+  min-height: 100%;
   /* HOME SLIDER */
   /* HOW IT WORKS */
   /* SERVICES */
   /* CATEGORIES */
   /* TESTIMONIALS */
   /* LOGIN */
+  /**********************
+  LOGIN/REGISTER 
+***********************/
 }
 
 main .home-carousel .carousel {
@@ -546,42 +577,30 @@ main .testimonials .testimonial-carousel.carousel .carousel-item .carousel-capti
   margin: auto;
 }
 
-main .login {
-  background: rgba(60, 59, 58, 0.1);
-  padding: 40px 0;
-}
-
-main .login .login-card {
+main .login-register .card {
   min-width: 500px;
   max-width: 500px;
   margin: auto;
 }
 
-main .login .login-card p {
-  margin: 0;
+main .login-register .card .login-btns {
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-main .login .login-card p a {
-  font-weight: 500;
-  font-size: 0.75rem;
-  color: #3C3B3A;
+main .login-register .card .login-btns a {
+  color: #00A099;
 }
 
-main .login .login-card .card-body-register {
-  padding-top: 15px;
-  padding-bottom: 15px;
-  margin-top: 0;
-  background: rgba(0, 0, 0, 0.05);
-}
-
-main .login .login-card .card-body-social h1 {
-  font-weight: 500;
-  font-size: 1rem;
-  color: #3C3B3A;
-  text-transform: uppercase;
-}
-
-main .login .login-card .card-body-social ul {
+main .login-register .card ul.social-login {
   margin: 0;
   padding: 0;
   display: -webkit-box;
@@ -592,104 +611,26 @@ main .login .login-card .card-body-social ul {
           justify-content: center;
 }
 
-main .login .login-card .card-body-social ul li {
+main .login-register .card ul.social-login li {
   margin: 0 5px;
   list-style: none;
   display: inline-block;
 }
 
-main .login .login-card .card-body-social p {
-  margin-top: 5px;
-}
-
-main .login .login-card .card-body-social p:first-child {
-  margin-top: 0;
-}
-
-main .login .login-card .user-fullname .user-name {
-  width: 49%;
-}
-
-main .login .login-card .btn-group {
-  width: 100%;
-}
-
-main .login .login-card .btn-group .btn {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
-main .login .login-card .btn-group .btn-buyer {
-  background: #be7200;
-}
-
-main .login .login-card .btn-group .btn-buyer:hover {
-  background: #a56300;
+main .login-register .card .register p {
+  margin-bottom: 0;
 }
 
 /**********************
   FOOTER 
 ***********************/
-footer {
+.footer {
   position: absolute;
-  background: #3C3B3A;
-  height: 387px;
+  bottom: 0;
   width: 100%;
+  height: 387px;
+  background: #3C3B3A;
   padding-top: 20px;
   padding-bottom: 20px;
-  display: block;
-  color: rgba(255, 255, 255, 0.6);
-}
-
-footer a {
-  color: rgba(255, 255, 255, 0.6);
-}
-
-footer img {
-  width: 116px;
-}
-
-footer .footer-links {
-  margin: 30px auto;
-  width: 65%;
-}
-
-footer .footer-links .footer-links-col {
-  width: 33.33%;
-}
-
-footer .footer-links .footer-links-col ul {
-  margin: 0;
-  padding: 0;
-}
-
-footer .footer-links .footer-links-col ul li {
-  list-style: none;
-  text-align: center;
-}
-
-footer .footer-links .footer-links-col ul li a {
-  font-weight: 500;
-  text-transform: uppercase;
-}
-
-footer .social-media {
-  width: 100%;
-}
-
-footer .social-media ul {
-  margin: 0 auto;
-  padding: 0;
-}
-
-footer .social-media ul li {
-  list-style: none;
-  display: inline-block;
-}
-
-footer .social-media ul li a {
-  padding-left: 20px;
-  padding-right: 10px;
-  font-size: 2.25rem;
 }
 /*# sourceMappingURL=styles.css.map */

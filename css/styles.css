@@ -632,5 +632,57 @@ main .login-register .card .register p {
   background: #3C3B3A;
   padding-top: 20px;
   padding-bottom: 20px;
+  color: white;
+}
+
+.footer img.logo {
+  display: block;
+  width: 80px;
+  margin: auto;
+}
+
+.footer ul {
+  margin: 0;
+  padding: 0;
+}
+
+.footer ul li {
+  list-style: none;
+}
+
+.footer ul li a {
+  color: white;
+}
+
+.footer .footer-links {
+  margin: 30px auto;
+  width: 65%;
+}
+
+.footer .footer-links .footer-links-col {
+  width: 33.33%;
+}
+
+.footer .footer-links .footer-links-col ul li {
+  text-align: center;
+}
+
+.footer .footer-links .footer-links-col ul li a {
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.footer .social-media {
+  width: 100%;
+}
+
+.footer .social-media ul li {
+  display: inline-block;
+}
+
+.footer .social-media ul li a {
+  padding-left: 20px;
+  padding-right: 10px;
+  font-size: 2.25rem;
 }
 /*# sourceMappingURL=styles.css.map */

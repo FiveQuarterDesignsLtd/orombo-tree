@@ -621,6 +621,10 @@ main .login-register .card .register p {
   margin-bottom: 0;
 }
 
+main .login-register .card .user-fullname .user-name {
+  width: 49%;
+}
+
 /**********************
   FOOTER 
 ***********************/

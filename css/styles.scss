@@ -35,13 +35,20 @@ body {
     font-family: 'Krub', sans-serif;
   }
 
+  .no-top-padding {
+    padding-top: 0!important;
+  }
+  .no-btm-padding {
+    padding-bottom: 0!important;
+  }
+
   @import 'inc/templates/_buttons';
 
   @import 'inc/templates/_form';
 
   @import 'inc/templates/_card';
 
-  // @import 'inc/_carousel';
+  @import 'inc/templates/_carousel';
 }
 
 @import 'inc/_navbar';

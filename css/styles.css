@@ -73,6 +73,14 @@ body h3 {
   font-family: 'Krub', sans-serif;
 }
 
+body .no-top-padding {
+  padding-top: 0 !important;
+}
+
+body .no-btm-padding {
+  padding-bottom: 0 !important;
+}
+
 body .btn-green, body .btn-orange, body .btn-grey, body .btn-facebook, body .btn-google, body .btn-linkedin {
   border: 0;
   border-radius: 25px;
@@ -179,6 +187,7 @@ body .card .card-body .card-title {
   background: white;
   -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
   box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+  z-index: 9999;
 }
 
 .navbar .navbar-brand {
@@ -238,28 +247,25 @@ body .card .card-body .card-title {
 main {
   padding: 40px 0;
   min-height: 100%;
-  /* HOME SLIDER */
-  /* HOW IT WORKS */
-  /* SERVICES */
-  /* CATEGORIES */
-  /* TESTIMONIALS */
-  /* LOGIN */
+  /**********************
+  HOME 
+***********************/
   /**********************
   LOGIN/REGISTER 
 ***********************/
 }
 
-main .home-carousel .carousel {
+main .home-carousel {
   background: #1f8985;
   background: linear-gradient(307deg, #1f8985 0%, #80d5d1 100%);
   max-height: 400px;
 }
 
-main .home-carousel .carousel .carousel-item {
+main .home-carousel .carousel-item {
   max-height: 400px;
 }
 
-main .home-carousel .carousel .carousel-item img {
+main .home-carousel .carousel-item img {
   opacity: 0;
   -webkit-animation: carousel-img 2s ease-out .5s 1;
           animation: carousel-img 2s ease-out .5s 1;
@@ -267,26 +273,21 @@ main .home-carousel .carousel .carousel-item img {
           animation-fill-mode: forwards;
 }
 
-main .home-carousel .carousel .carousel-item .carousel-caption {
-  width: 1140px;
+main .home-carousel .carousel-item .carousel-caption {
   text-align: left;
-  margin: auto;
   padding-left: 15px;
   padding-right: 15px;
-  -webkit-transition: ease .5s all;
-  transition: ease .5s all;
 }
 
-main .home-carousel .carousel .carousel-item .carousel-caption h1,
-main .home-carousel .carousel .carousel-item .carousel-caption p {
+main .home-carousel .carousel-item .carousel-caption h1,
+main .home-carousel .carousel-item .carousel-caption p {
   opacity: 0;
   font-family: 'Saira Semi Condensed', sans-serif;
   font-weight: 400;
-  width: 665px;
   position: relative;
 }
 
-main .home-carousel .carousel .carousel-item .carousel-caption h1 {
+main .home-carousel .carousel-item .carousel-caption h1 {
   font-size: 2.5rem;
   -webkit-animation: carousel-title 1s ease-out 1s 1;
           animation: carousel-title 1s ease-out 1s 1;
@@ -294,7 +295,7 @@ main .home-carousel .carousel .carousel-item .carousel-caption h1 {
           animation-fill-mode: forwards;
 }
 
-main .home-carousel .carousel .carousel-item .carousel-caption p {
+main .home-carousel .carousel-item .carousel-caption p {
   font-size: 1.25rem;
   -webkit-animation: carousel-title 1s ease-out 1.5s 1;
           animation: carousel-title 1s ease-out 1.5s 1;
@@ -302,7 +303,7 @@ main .home-carousel .carousel .carousel-item .carousel-caption p {
           animation-fill-mode: forwards;
 }
 
-main .home-carousel .carousel .carousel-item .carousel-caption .btn-orange {
+main .home-carousel .carousel-item .carousel-caption .btn-orange {
   position: relative;
   opacity: 0;
   -webkit-animation: carousel-title 1s ease-out 2s 1;
@@ -311,6 +312,155 @@ main .home-carousel .carousel .carousel-item .carousel-caption .btn-orange {
           animation-fill-mode: forwards;
   -webkit-box-shadow: 0px 13px 16px 0px #00a099;
   box-shadow: 0px 13px 16px 0px #00a099;
+}
+
+main .section {
+  padding: 36px 0 56px;
+}
+
+main .section .area-title h1 {
+  text-transform: uppercase;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 60px;
+  font-size: 1.875rem;
+}
+
+main .how-it-works .card .card-img-top {
+  width: 50%;
+  margin: auto;
+}
+
+main .how-it-works .card .card-body .card-title {
+  text-align: center;
+}
+
+main .how-it-works .card .card-body .card-text {
+  text-align: center;
+}
+
+main .categories {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+main .categories .card {
+  background: white;
+  -webkit-box-shadow: 0px 13px 16px 0px rgba(0, 0, 0, 0.36);
+  box-shadow: 0px 13px 16px 0px rgba(0, 0, 0, 0.36);
+  margin-bottom: 20px;
+}
+
+main .categories .card .card-icon {
+  text-align: center;
+  padding: 20px;
+  padding-bottom: 0;
+  font-size: 2rem;
+  color: #00A099;
+}
+
+main .categories .card .card-body {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+main .categories .card .card-body .card-title a {
+  font-family: 'Saira Semi Condensed', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #3C3B3A;
+  text-align: center;
+  -webkit-transition: ease .5s all;
+  transition: ease .5s all;
+}
+
+main .categories .card .card-body .card-title a:hover {
+  text-decoration: none;
+}
+
+main .services {
+  background: url(../../img/service-bg@2x.png) right 20px no-repeat;
+  background-size: 20%;
+  background-color: white;
+}
+
+main .services .card {
+  width: 600px;
+  background: transparent;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+main .services .card .card-img {
+  width: 45px;
+}
+
+main .services .card .card-img img {
+  width: 45px;
+}
+
+main .services .card .card-body {
+  margin-top: 5px;
+  padding-top: 0;
+  color: #3C3B3A;
+}
+
+main .services .card .card-body .card-title {
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+main .services .card .card-body .card-text {
+  font-size: 1.125rem;
+}
+
+main .testimonials {
+  background: #1f8985;
+  background: -webkit-gradient(linear, left top, right top, from(#1f8985), to(#80d5d1));
+  background: linear-gradient(90deg, #1f8985 0%, #80d5d1 100%);
+}
+
+main .testimonials .testimonial-carousel {
+  background: transparent;
+}
+
+main .testimonials .testimonial-carousel .carousel-item {
+  height: 200px;
+}
+
+main .testimonials .testimonial-carousel .carousel-item img {
+  height: 200px;
+}
+
+main .testimonials .testimonial-carousel .carousel-item .carousel-caption {
+  width: 100%;
+  left: auto;
+  right: auto;
+}
+
+main .testimonials .testimonial-carousel .carousel-item .carousel-caption h1,
+main .testimonials .testimonial-carousel .carousel-item .carousel-caption p {
+  font-family: 'Saira Semi Condensed', sans-serif;
+  color: white;
+}
+
+main .testimonials .testimonial-carousel .carousel-item .carousel-caption h1 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  text-align: center;
+  width: 90%;
+  margin: auto;
+}
+
+main .testimonials .testimonial-carousel .carousel-item .carousel-caption p {
+  margin-top: 20px;
+  padding-top: 20px;
+  font-size: 1rem;
+  text-align: center;
+  width: 60%;
+  margin: auto;
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -326,6 +476,13 @@ main .home-carousel .carousel .carousel-item .carousel-caption .btn-orange {
     font-size: 1rem;
     width: 100%;
   }
+  main .services {
+    background: url(../../img/service-bg@2x.png) 112% bottom no-repeat;
+    background-size: 40%;
+  }
+  main .services .card .card-body {
+    background: transparent;
+  }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -340,6 +497,12 @@ main .home-carousel .carousel .carousel-item .carousel-caption .btn-orange {
   main .home-carousel .carousel .carousel-item .carousel-caption p {
     font-size: 1rem;
     width: 100%;
+  }
+  main .services {
+    background: none;
+  }
+  main .services .card .card-body {
+    background: transparent;
   }
 }
 
@@ -366,111 +529,6 @@ main .home-carousel .carousel .carousel-item .carousel-caption .btn-orange {
   main .home-carousel .carousel .carousel-item .carousel-caption p {
     display: none;
   }
-}
-
-main .area-title h1 {
-  text-transform: uppercase;
-  font-weight: 400;
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-main .how-it-works {
-  padding: 36px 0 56px;
-}
-
-main .how-it-works .card {
-  padding-top: 20px;
-  padding-bottom: 30px;
-  background-color: transparent;
-  border-radius: 0;
-}
-
-main .how-it-works .card .card-img-top {
-  width: 50%;
-  margin: auto;
-}
-
-main .how-it-works .card .card-body {
-  background: transparent;
-}
-
-main .how-it-works .card .card-body .card-title {
-  font-size: 1.25rem;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-main .how-it-works .card .card-body hr {
-  width: 50px;
-  height: 2px;
-  border: 0;
-  background: #3C3B3A;
-}
-
-main .how-it-works .card .card-body .card-text {
-  text-align: center;
-}
-
-main .services {
-  padding: 40px 0 80px;
-  background: url(../../img/service-bg@2x.png) right 20px no-repeat;
-  background-size: 20%;
-  background-color: white;
-}
-
-main .services .card {
-  width: 600px;
-  background: transparent;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-main .services .card .card-img {
-  width: 45px;
-}
-
-main .services .card .card-img img {
-  width: 45px;
-}
-
-main .services .card .card-body {
-  margin-top: 5px;
-  padding-top: 0;
-}
-
-main .services .card .card-body .card-title {
-  font-weight: 400;
-  font-size: 2rem;
-  text-transform: uppercase;
-}
-
-main .services .card .card-body .card-text {
-  font-size: 1.125rem;
-}
-
-@media (min-width: 768px) and (max-width: 991.98px) {
-  main .services {
-    background: url(../../img/service-bg@2x.png) 112% bottom no-repeat;
-    background-size: 40%;
-  }
-  main .services .card .card-body {
-    background: transparent;
-  }
-}
-
-@media (min-width: 576px) and (max-width: 767.98px) {
-  main .services {
-    background: none;
-  }
-  main .services .card .card-body {
-    background: transparent;
-  }
-}
-
-@media (max-width: 575.98px) {
   main .services {
     background: none;
   }
@@ -480,101 +538,6 @@ main .services .card .card-body .card-text {
   main .services .card .card-body {
     background: transparent;
   }
-}
-
-main .categories {
-  padding: 40px 0 60px;
-  background: rgba(0, 0, 0, 0.05);
-}
-
-main .categories .card {
-  background: white;
-  -webkit-box-shadow: 0px 13px 16px 0px rgba(0, 0, 0, 0.36);
-  box-shadow: 0px 13px 16px 0px rgba(0, 0, 0, 0.36);
-  border-radius: 0;
-  margin-bottom: 20px;
-}
-
-main .categories .card .card-icon {
-  text-align: center;
-  padding: 20px;
-  padding-bottom: 0;
-  font-size: 2rem;
-  color: #00A099;
-}
-
-main .categories .card .card-body {
-  margin-top: 0;
-  padding-top: 0;
-}
-
-main .categories .card .card-body .card-title a {
-  font-family: 'Saira Semi Condensed', sans-serif;
-  font-weight: 400;
-  font-size: 1rem;
-  text-transform: uppercase;
-  color: #3C3B3A;
-  border-radius: 25px;
-  width: 100%;
-  text-align: center;
-  -webkit-transition: ease .5s all;
-  transition: ease .5s all;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-main .categories .card .card-body .card-title a:hover {
-  text-decoration: none;
-  color: white;
-  background-color: #F19100;
-}
-
-main .testimonials {
-  padding: 30px 0;
-  background: #1f8985;
-  background: -webkit-gradient(linear, left top, right top, from(#1f8985), to(#80d5d1));
-  background: linear-gradient(90deg, #1f8985 0%, #80d5d1 100%);
-}
-
-main .testimonials .testimonial-carousel.carousel {
-  background: transparent;
-}
-
-main .testimonials .testimonial-carousel.carousel .carousel-item {
-  height: 200px;
-}
-
-main .testimonials .testimonial-carousel.carousel .carousel-item img {
-  height: 200px;
-}
-
-main .testimonials .testimonial-carousel.carousel .carousel-item .carousel-caption {
-  width: 100%;
-  left: auto;
-  right: auto;
-}
-
-main .testimonials .testimonial-carousel.carousel .carousel-item .carousel-caption h1,
-main .testimonials .testimonial-carousel.carousel .carousel-item .carousel-caption p {
-  font-family: 'Saira Semi Condensed', sans-serif;
-  color: white;
-}
-
-main .testimonials .testimonial-carousel.carousel .carousel-item .carousel-caption h1 {
-  font-size: 1.25rem;
-  font-weight: 500;
-  text-align: center;
-  width: 90%;
-  margin: auto;
-}
-
-main .testimonials .testimonial-carousel.carousel .carousel-item .carousel-caption p {
-  margin-top: 20px;
-  padding-top: 20px;
-  font-size: 1rem;
-  text-align: center;
-  width: 60%;
-  margin: auto;
 }
 
 main .login-register .card {

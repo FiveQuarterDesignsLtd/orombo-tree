@@ -7,6 +7,6 @@
   .user-menu {
     padding: 50px 0;
     width: 200px;
-    background: $orombogrey;
+    background: lighten($orombogrey, 70%);
   }
 }

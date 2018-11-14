@@ -35,6 +35,10 @@ body {
     font-family: 'Krub', sans-serif;
   }
 
+  a {
+    transition: ease .5s all;
+  }
+
   .no-top-padding {
     padding-top: 0!important;
   }

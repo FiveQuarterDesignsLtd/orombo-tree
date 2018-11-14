@@ -18,6 +18,7 @@
 
   .navbar-toggler {
     font-size: 2rem;
+
     .navbar-toggler-icon {
       display: flex;
       align-items: center;
@@ -34,22 +35,61 @@
 
   .navbar-nav {
     .nav-item {
+      &:last-of-type {
+        margin-left: .5rem;
+      }
       .nav-link {
         font-weight: 300;
         text-transform: uppercase;
         color: $orombogrey;
         transition: ease .5s all;
-        &.nav-signup-login {
+
+        &.nav-icon {
+          padding-top: .48rem;
+          i {
+            font-size: 1.5rem;
+          }
+        }
+
+        &.nav-signup-login,
+        &.nav-logout {
           color: $orombogreen;
           font-weight: 500;
           border: 1px solid $orombogreen;
           border-radius: 25px;
-          padding-left: 1rem;
-          padding-right: 1rem;
+
           &:hover {
             background: $orombogreen;
             color: white;
           }
+        }
+
+        &.nav-signup-login {
+          padding-left: 1rem;
+          padding-right: 1rem;
+        }
+
+        &.nav-logout {
+          padding-left: .75rem;
+          padding-right: .75rem;
+
+          i {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+
+    .dropdown-menu {
+      border-radius: 0;
+      border: 0;
+      -webkit-box-shadow: 0px 13px 16px 0px rgba(0, 0, 0, 0.36);
+      -moz-box-shadow: 0px 13px 16px 0px rgba(0, 0, 0, 0.36);
+      box-shadow: 0px 13px 16px 0px rgba(0, 0, 0, 0.36);
+
+      .dropdown-item {
+        i {
+          margin-right: 10px;
         }
       }
     }

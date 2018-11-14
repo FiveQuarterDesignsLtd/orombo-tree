@@ -81,6 +81,11 @@ body .no-btm-padding {
   padding-bottom: 0 !important;
 }
 
+body.no-btm-margin, body .no-btm-margin {
+  margin-bottom: 0 !important;
+  height: calc(100vh - 77px);
+}
+
 body .btn-green, body .btn-orange, body .btn-grey, body .btn-facebook, body .btn-google, body .btn-linkedin {
   border: 0;
   border-radius: 25px;
@@ -219,6 +224,10 @@ body .card .card-body .card-title {
   border-top: 1px solid rgba(60, 59, 58, 0.5);
 }
 
+.navbar .navbar-nav .nav-item:last-of-type {
+  margin-left: .5rem;
+}
+
 .navbar .navbar-nav .nav-item .nav-link {
   font-weight: 300;
   text-transform: uppercase;
@@ -227,18 +236,49 @@ body .card .card-body .card-title {
   transition: ease .5s all;
 }
 
-.navbar .navbar-nav .nav-item .nav-link.nav-signup-login {
+.navbar .navbar-nav .nav-item .nav-link.nav-icon {
+  padding-top: .48rem;
+}
+
+.navbar .navbar-nav .nav-item .nav-link.nav-icon i {
+  font-size: 1.5rem;
+}
+
+.navbar .navbar-nav .nav-item .nav-link.nav-signup-login, .navbar .navbar-nav .nav-item .nav-link.nav-logout {
   color: #00A099;
   font-weight: 500;
   border: 1px solid #00A099;
   border-radius: 25px;
+}
+
+.navbar .navbar-nav .nav-item .nav-link.nav-signup-login:hover, .navbar .navbar-nav .nav-item .nav-link.nav-logout:hover {
+  background: #00A099;
+  color: white;
+}
+
+.navbar .navbar-nav .nav-item .nav-link.nav-signup-login {
   padding-left: 1rem;
   padding-right: 1rem;
 }
 
-.navbar .navbar-nav .nav-item .nav-link.nav-signup-login:hover {
-  background: #00A099;
-  color: white;
+.navbar .navbar-nav .nav-item .nav-link.nav-logout {
+  padding-left: .75rem;
+  padding-right: .75rem;
+}
+
+.navbar .navbar-nav .nav-item .nav-link.nav-logout i {
+  margin-right: 10px;
+}
+
+.navbar .navbar-nav .dropdown-menu {
+  border-radius: 0;
+  border: 0;
+  -webkit-box-shadow: 0px 13px 16px 0px rgba(0, 0, 0, 0.36);
+  box-shadow: 0px 13px 16px 0px rgba(0, 0, 0, 0.36);
+}
+
+.navbar .navbar-nav .dropdown-menu .dropdown-item i {
+  margin-right: 10px;
 }
 
 /**********************
@@ -586,6 +626,22 @@ main .login-register .card .register p {
 
 main .login-register .card .user-fullname .user-name {
   width: 49%;
+}
+
+main.user-area {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 200px auto;
+      grid-template-columns: 200px auto;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  height: 100%;
+}
+
+main.user-area .user-menu {
+  padding: 50px 0;
+  width: 200px;
+  background: #3C3B3A;
 }
 
 /**********************

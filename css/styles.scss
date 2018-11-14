@@ -41,6 +41,10 @@ body {
   .no-btm-padding {
     padding-bottom: 0!important;
   }
+  &.no-btm-margin, .no-btm-margin {
+    margin-bottom: 0!important;
+    height: calc(100vh - 77px);
+  }
 
   @import 'inc/templates/_buttons';
 

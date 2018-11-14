@@ -1,0 +1,83 @@
+.user-menu {
+  width: 250px;
+  background: lighten($orombogrey, 70%);
+
+  .user-info {
+    padding: 1rem;
+    display: flex;
+    align-content: center;
+    border-bottom: 1px solid rgba($orombogrey, .2);
+
+    .user-pic {
+      width: 50px;
+      height: 50px;
+      background: $orombogreen;
+      border-radius: 35px;
+      position: relative;
+      transition: ease .5s all;
+
+      a {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        padding: 11px 0 17px;
+        color: white;
+        text-align: center;
+        border-radius: 35px;
+        background: rgba($oromboorange, 0);
+        color: rgba(white, 0);
+        font-size: 1.225rem;
+      }
+
+      img {
+        width: 50px;
+        height: 50px;
+        border-radius: 35px;
+      }
+
+      &:hover {
+        a {
+          background: rgba($oromboorange, .8);
+          color: white
+        }
+      }
+    }
+
+    .user-name {
+      padding-left: 1rem;
+      line-height: 1rem;
+      display: flex;
+      align-items: center;
+
+      span {
+        text-transform: uppercase;
+
+        small {
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+
+  .nav {
+    padding: 1rem 0;
+
+    .nav-item {
+
+      .nav-link {
+        text-transform: uppercase;
+        color: $orombogrey;
+      }
+
+      &:hover {
+        background: rgba($orombogrey, .1);
+        border-left: 4px solid $orombogreen;
+
+        .nav-link {
+          padding-left: calc(1rem - 4px);
+        }
+      }
+    }
+  }
+}

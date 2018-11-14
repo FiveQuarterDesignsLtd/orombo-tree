@@ -719,17 +719,98 @@ main .login-register .card .user-fullname .user-name {
 main.user-area {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 200px auto;
-      grid-template-columns: 200px auto;
+  -ms-grid-columns: 250px auto;
+      grid-template-columns: 250px auto;
   -ms-grid-rows: auto;
       grid-template-rows: auto;
   height: 100%;
 }
 
 main.user-area .user-menu {
-  padding: 50px 0;
-  width: 200px;
+  width: 250px;
   background: #eeeeed;
+}
+
+main.user-area .user-menu .user-info {
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  border-bottom: 1px solid rgba(60, 59, 58, 0.2);
+}
+
+main.user-area .user-menu .user-info .user-pic {
+  width: 50px;
+  height: 50px;
+  background: #00A099;
+  border-radius: 35px;
+  position: relative;
+  -webkit-transition: ease .5s all;
+  transition: ease .5s all;
+}
+
+main.user-area .user-menu .user-info .user-pic a {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: 11px 0 17px;
+  color: white;
+  text-align: center;
+  border-radius: 35px;
+  background: rgba(241, 145, 0, 0);
+  color: rgba(255, 255, 255, 0);
+  font-size: 1.225rem;
+}
+
+main.user-area .user-menu .user-info .user-pic img {
+  width: 50px;
+  height: 50px;
+  border-radius: 35px;
+}
+
+main.user-area .user-menu .user-info .user-pic:hover a {
+  background: rgba(241, 145, 0, 0.8);
+  color: white;
+}
+
+main.user-area .user-menu .user-info .user-name {
+  padding-left: 1rem;
+  line-height: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main.user-area .user-menu .user-info .user-name span {
+  text-transform: uppercase;
+}
+
+main.user-area .user-menu .user-info .user-name span small {
+  text-transform: capitalize;
+}
+
+main.user-area .user-menu .nav {
+  padding: 1rem 0;
+}
+
+main.user-area .user-menu .nav .nav-item .nav-link {
+  text-transform: uppercase;
+  color: #3C3B3A;
+}
+
+main.user-area .user-menu .nav .nav-item:hover {
+  background: rgba(60, 59, 58, 0.1);
+  border-left: 4px solid #00A099;
+}
+
+main.user-area .user-menu .nav .nav-item:hover .nav-link {
+  padding-left: calc(1rem - 4px);
 }
 
 /**********************

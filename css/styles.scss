@@ -35,11 +35,19 @@ body {
     font-family: 'Krub', sans-serif;
   }
 
+  a {
+    transition: ease .5s all;
+  }
+
   .no-top-padding {
     padding-top: 0!important;
   }
   .no-btm-padding {
     padding-bottom: 0!important;
+  }
+  &.no-btm-margin, .no-btm-margin {
+    margin-bottom: 0!important;
+    height: calc(100vh - 77px);
   }
 
   @import 'inc/templates/_buttons';

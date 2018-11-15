@@ -70,7 +70,7 @@
         color: $orombogrey;
 
         &.active {
-          background: lighten($orombogrey,65%);
+          background: lighten($orombogrey,67%);
           border-left: 4px solid $oromboorange;
           position:relative;
           padding-left: calc(1rem - 4px);
@@ -81,7 +81,7 @@
             position: absolute;
             top: 0;
             right: -20px;
-            background: lighten($orombogrey,65%);
+            background: lighten($orombogrey,67%);
             border-top-right-radius: 35px;
             border-bottom-right-radius: 35px;
             height: 40px;

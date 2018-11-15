@@ -1,44 +1,89 @@
-.btn-green, .btn-orange, .btn-grey, .btn-facebook, .btn-google, .btn-linkedin {
+.btn-green,
+.btn-orange,
+.btn-grey,
+.btn-facebook,
+.btn-google,
+.btn-linkedin,
+.btn-grey-outline {
   border: 0;
   border-radius: 25px;
   color: white;
   width: 230px;
   text-transform: uppercase;
   transition: all .5s ease;
+  outline: 0;
 }
+
 .btn-green {
   background: $orombogreen;
+
   &:hover {
-    background: darken($orombogreen,10%);
+    background: darken($orombogreen, 10%);
   }
 }
+
 .btn-orange {
   background: $oromboorange;
+
   &:hover {
-    background: darken($oromboorange,5%);
+    background: darken($oromboorange, 5%);
   }
 }
+
 .btn-grey {
-  background: lighten($orombogrey,50%);
+  background: lighten($orombogrey, 50%);
+
   &:hover {
-    background: darken($orombogrey,10%);
+    background: darken($orombogrey, 10%);
   }
 }
+
+.btn-grey-outline {
+  background: white;
+  color: $orombogrey;
+  border: 1px solid lighten($orombogrey, 50%);
+}
+
 .btn-facebook {
   background: $facebook;
   height: 36px;
   width: 36px;
   padding: 0;
 }
+
 .btn-google {
   background: $google;
   height: 36px;
   width: 36px;
   padding: 0;
 }
+
 .btn-linkedin {
   background: $linkedin;
   height: 36px;
   width: 36px;
   padding: 0;
+}
+
+.dropdown {
+  .dropdown-menu {
+    border-radius: 0;
+    border: 0;
+    -webkit-box-shadow: 0px 13px 16px 0px rgba(0, 0, 0, 0.36);
+    -moz-box-shadow: 0px 13px 16px 0px rgba(0, 0, 0, 0.36);
+    box-shadow: 0px 13px 16px 0px rgba(0, 0, 0, 0.36);
+    padding: 0;
+
+    .dropdown-item {
+      padding: .5rem 1rem;
+      border-bottom: 1px solid lighten($orombogrey, 60%);
+      display: flex;
+      align-items: center;
+      font-size: 0.875rem;
+
+      &:last-of-type {
+        border-bottom: 0;
+      }
+    }
+  }
 }

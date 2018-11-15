@@ -68,6 +68,26 @@
       .nav-link {
         text-transform: uppercase;
         color: $orombogrey;
+
+        &.active {
+          background: lighten($orombogrey,65%);
+          border-left: 4px solid $oromboorange;
+          position:relative;
+          padding-left: calc(1rem - 4px);
+          &:hover {
+            border-left: 0;
+          }
+          span {
+            position: absolute;
+            top: 0;
+            right: -20px;
+            background: lighten($orombogrey,65%);
+            border-top-right-radius: 35px;
+            border-bottom-right-radius: 35px;
+            height: 40px;
+            width: 40px;
+          }
+        }
       }
 
       &:hover {

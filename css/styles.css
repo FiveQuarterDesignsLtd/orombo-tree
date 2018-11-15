@@ -804,6 +804,28 @@ main.user-area .user-menu .nav .nav-item .nav-link {
   color: #3C3B3A;
 }
 
+main.user-area .user-menu .nav .nav-item .nav-link.active {
+  background: #e6e6e5;
+  border-left: 4px solid #F19100;
+  position: relative;
+  padding-left: calc(1rem - 4px);
+}
+
+main.user-area .user-menu .nav .nav-item .nav-link.active:hover {
+  border-left: 0;
+}
+
+main.user-area .user-menu .nav .nav-item .nav-link.active span {
+  position: absolute;
+  top: 0;
+  right: -20px;
+  background: #e6e6e5;
+  border-top-right-radius: 35px;
+  border-bottom-right-radius: 35px;
+  height: 40px;
+  width: 40px;
+}
+
 main.user-area .user-menu .nav .nav-item:hover {
   background: rgba(60, 59, 58, 0.1);
   border-left: 4px solid #00A099;
@@ -811,6 +833,116 @@ main.user-area .user-menu .nav .nav-item:hover {
 
 main.user-area .user-menu .nav .nav-item:hover .nav-link {
   padding-left: calc(1rem - 4px);
+}
+
+main.user-area .user-content {
+  background: #f9f9f9;
+}
+
+main.user-area .user-content .breadcrumb {
+  background: white;
+  border-radius: 0;
+  border-bottom: 2px solid rgba(60, 59, 58, 0.1);
+  text-transform: uppercase;
+  padding: .75rem 1rem .75rem 2.5rem;
+  margin-bottom: 0;
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+main.user-area .user-content .breadcrumb .breadcrumb-item {
+  font-size: 0.75rem;
+}
+
+main.user-area .user-content .breadcrumb .breadcrumb-item::before {
+  color: #bcbbb9;
+}
+
+main.user-area .user-content .breadcrumb .breadcrumb-item a {
+  color: #F19100;
+}
+
+main.user-area .user-content .page-title {
+  padding: .75rem 1rem .75rem 2.5rem;
+  border-bottom: 2px solid rgba(60, 59, 58, 0.05);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: white;
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+main.user-area .user-content .page-title h1 {
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+main.user-area .user-content .page-title .btn-new {
+  width: auto;
+  border-radius: 4px;
+}
+
+main.user-area .user-content .page-content {
+  padding: .75rem 1rem .75rem 2.5rem;
+  overflow-y: scroll;
+  height: calc(100% - 183px);
+}
+
+main.user-area .user-content .page-content .card {
+  background: white;
+  margin-bottom: 20px;
+}
+
+main.user-area .user-content .page-content .card .card-img-top {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+main.user-area .user-content .page-content .card .card-body {
+  padding: .25rem .75rem;
+}
+
+main.user-area .user-content .page-content .card .card-body .service-category .badge {
+  font-weight: 400;
+}
+
+main.user-area .user-content .page-content .card .card-body .service-category .badge.badge-category {
+  background: #eeeeed;
+}
+
+main.user-area .user-content .page-content .card .card-body .card-title {
+  margin-top: .75rem;
+  height: 50px;
+}
+
+main.user-area .user-content .page-content .card .card-body .card-title a {
+  color: #3C3B3A;
+  -webkit-transition: ease .5s all;
+  transition: ease .5s all;
+}
+
+main.user-area .user-content .page-content .card .card-body .card-title a:hover {
+  color: #F19100;
+  text-decoration: none;
+}
+
+main.user-area .user-content .page-content .card .card-body .btn-view-services {
+  width: 100%;
+  font-size: 0.875rem;
+  margin-bottom: .75rem;
+}
+
+main.user-area .user-content .page-content .card .card-body .btn-view-services:hover {
+  background: #F19100;
 }
 
 /**********************

@@ -1133,6 +1133,19 @@ main.user-area .user-content .page-content .card .card-body .btn-view-services:h
   background: #F19100;
 }
 
+main.user-area .user-content .page-content .btn-cover-img {
+  width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-radius: 10px;
+  border-style: dashed;
+}
+
+main.user-area .user-content .page-content .btn-cover-img:hover {
+  border: 1px solid #F19100;
+  color: #F19100;
+}
+
 /**********************
   FOOTER 
 ***********************/

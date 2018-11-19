@@ -123,5 +123,19 @@
         }
       }
     }
+
+    .btn-cover-img {
+      width: 100%;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      border-radius: 10px;
+      border-style: dashed;
+      &:hover {
+        border: 1px solid $oromboorange;
+        color: $oromboorange;
+      }
+    }
+
+
   }
 }

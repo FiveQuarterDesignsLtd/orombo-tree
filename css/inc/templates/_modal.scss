@@ -1,15 +1,14 @@
 .modal-dialog {
   .modal-content {
-    // border-radius: 0;
 
     .modal-header {
       .modal-title {
         margin: 0;
         font-weight: 300;
         font-size: 1.5rem;
-        line-height: 1.5rem;
+        line-height: 1.75rem;
         small {
-          color: lighten($orombogrey, 50%);
+          color: lighten($orombogrey, 40%);
         }
       }
     }
@@ -52,12 +51,29 @@
           padding-bottom: 2rem;
           border-style: dashed;
           color: $oromboorange;
+          small {
+            color: lighten($orombogrey,50%);
+          }
+        }
+
+        .service-images {
+          display: flex;
+          align-items: center;
+          justify-items: center;
+          
+          .service-image {
+            width: 75px;
+            height: 75px;
+            border-radius: 7px;
+            border: 2px dashed lighten($orombogrey,50%);
+            background: lighten($orombogrey,72.5%);
+          }
         }
       }
 
       .tips {
         padding: 1rem;
-        background: lighten($orombogrey, 75%);
+        background: lighten($orombogrey, 72.5%);
 
         .card-title {
           color: $orombogreen;

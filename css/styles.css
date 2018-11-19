@@ -187,6 +187,10 @@ body .form-group {
   margin: 0;
 }
 
+body .form-group .form-text {
+  font-style: italic;
+}
+
 body .form-group .ddl {
   position: relative;
   border: 1px solid #ccc;
@@ -255,11 +259,11 @@ body .modal-dialog .modal-content .modal-header .modal-title {
   margin: 0;
   font-weight: 300;
   font-size: 1.5rem;
-  line-height: 1.5rem;
+  line-height: 1.75rem;
 }
 
 body .modal-dialog .modal-content .modal-header .modal-title small {
-  color: #bcbbb9;
+  color: #a3a19f;
 }
 
 body .modal-dialog .modal-content .modal-body {
@@ -304,9 +308,31 @@ body .modal-dialog .modal-content .modal-body .add-form .btn-grey-outline {
   color: #F19100;
 }
 
+body .modal-dialog .modal-content .modal-body .add-form .btn-grey-outline small {
+  color: #bcbbb9;
+}
+
+body .modal-dialog .modal-content .modal-body .add-form .service-images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+}
+
+body .modal-dialog .modal-content .modal-body .add-form .service-images .service-image {
+  width: 75px;
+  height: 75px;
+  border-radius: 7px;
+  border: 2px dashed #bcbbb9;
+  background: #f4f4f4;
+}
+
 body .modal-dialog .modal-content .modal-body .tips {
   padding: 1rem;
-  background: #fafafa;
+  background: #f4f4f4;
 }
 
 body .modal-dialog .modal-content .modal-body .tips .card-title {

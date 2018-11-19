@@ -174,7 +174,7 @@
               <a class="dropdown-item" href="#">Graphic Designer</a>
             </div>
           </div>
-          <a href="#" class="btn btn-green btn-new">New</a>
+          <a href="#" class="btn btn-green btn-new" data-toggle="modal" data-target=".bd-addservice-modal-lg">New</a>
         </div>
       </div>
       <div class="page-content">
@@ -259,6 +259,135 @@
     </div>
   </footer> -->
 
+  <!-- Modal -->
+  <div class="modal fade bd-addservice-modal-lg" tabindex="-1" role="dialog" aria-labelledby="addServiceModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title" id="addServiceModalLabel">Add your Service in Seconds<br><small>Offer: a packed
+              service you can deliver for a fixed price in a set timeframe.</small></h1>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body container">
+          <div class="row">
+            <div class="col-8 add-form">
+              <form>
+                <div class="row pb-3">
+                  <div class="col-10 p-0">
+                    <div class="form-group">
+                      <label for="exampleInputEmail1" class="sr-only">I am...</label>
+                      <input type="text" class="form-control service-title-control" id="exampleInputEmail1"
+                        aria-describedby="emailHelp" placeholder="I am...">
+                      <small id="emailHelp" class="form-text text-muted">e.g. I can design your business card for £60</small>
+                    </div>
+                  </div>
+                  <div class="col-2 p-0">
+                    <div class="form-group">
+                      <label class="sr-only" for="txtFor">For...</label>
+                      <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                          <div class="input-group-text service-price-control"><i class="fal fa-pound-sign"></i></div>
+                        </div>
+                        <input type="text" class="form-control" id="txtFor" placeholder="For..">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row pb-3">
+                  <div class="col-6 pl-0">
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">I will deliver the service in... <span data-toggle="tooltip"
+                          data-placement="right" title="Tooltip on right"><i class="fas fa-info-circle"></i></span></label>
+                      <div class="ddl">
+                        <select name="" id="" class="form-control">
+                          <option value="">1 day</option>
+                          <option value="">2 days</option>
+                          <option value="">3 days</option>
+                          <option value="">4 days</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6 pr-0">
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Pick a Service Profile...</label>
+                      <div class="ddl">
+                        <select name="" id="" class="form-control">
+                          <option value="">Select...</option>
+                          <option value="">Web Developer</option>
+                          <option value="">Graphic Designer</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row pb-3">
+                  <div class="col-12 p-0">
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Add Tags</label>
+                      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        placeholder="Type here...">
+                      <small id="emailHelp" class="form-text text-muted">Separate with a comma</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="row pb-3">
+                  <div class="col-12 p-0">
+                    <button class="btn btn-grey-outline">Upload video or photos</button>
+                  </div>
+                </div>
+                <div class="row pb-3">
+                  <div class="col-12 p-0">
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Provide more details about your offer</label>
+                      <textarea name="" id="" rows="10" class="form-control" placeholder="Explain in more detail what exactly you will deliver"></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="row pb-3">
+                  <div class="col-12 p-0">
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">What do you need from the Buyer to get started?</label>
+                      <textarea name="" id="" rows="10" class="form-control" placeholder="Explain what you will need from the Buyer to deliver the work..."></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="row pb-3">
+                  <div class="col-12 p-0">
+                    <div class="form-group form-check pb-3">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">I confirm that I am able to deliver this service to Buyers within the delivery time specified. I will update or pause my Offer if I can no longer meet this delivery time. I understand that late delivery will adversely affect my rankings on PPH and will entitle the Buyer to a refund. See <a href="#">T&Cs</a></label>
+                    </div>
+                    <button type="button" class="btn btn-green">Submit new service</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="col-4 tips">
+              <div class="card">
+                <div class="card-body">
+                  <h1 class="card-title">
+                    Freelancer Tips
+                  </h1>
+                  <ol>
+                    <li>Be original. What’s different about what you have to offer?</li>
+                    <li>Be as specific as you can about the service you are offering and exactly what the Buyer will
+                      receive if they purchase your Offer.</li>
+                    <li>Set a realistic delivery timeframe. Late delivery will lead to unhappy Buyers and will affect
+                      your rankings.</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
 
   <!-- Optional JavaScript -->
@@ -269,6 +398,12 @@
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
+
+  <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+  </script>
 </body>
 
 </html>

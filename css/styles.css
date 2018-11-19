@@ -187,6 +187,30 @@ body .form-group {
   margin: 0;
 }
 
+body .form-group .ddl {
+  position: relative;
+  border: 1px solid #ccc;
+  width: 100%;
+  border-radius: 35px;
+  overflow: hidden;
+}
+
+body .form-group .ddl .form-control {
+  border: 0;
+}
+
+body .form-group .ddl .form-control option {
+  padding-left: 1rem;
+}
+
+body .form-group .form-control {
+  border-radius: 35px;
+}
+
+body .form-group textarea.form-control {
+  border-radius: 15px;
+}
+
 body .form-group .input-group .input-group-text {
   border-top-left-radius: 35px;
   border-bottom-left-radius: 35px;
@@ -227,6 +251,80 @@ body .card .card-body .card-title {
   text-transform: uppercase;
 }
 
+body .modal-dialog .modal-content .modal-header .modal-title {
+  margin: 0;
+  font-weight: 300;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+}
+
+body .modal-dialog .modal-content .modal-header .modal-title small {
+  color: #bcbbb9;
+}
+
+body .modal-dialog .modal-content .modal-body {
+  padding: 0;
+}
+
+body .modal-dialog .modal-content .modal-body .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+body .modal-dialog .modal-content .modal-body .add-form {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+body .modal-dialog .modal-content .modal-body .add-form a {
+  color: #F19100;
+}
+
+body .modal-dialog .modal-content .modal-body .add-form .service-title-control {
+  border-right: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+body .modal-dialog .modal-content .modal-body .add-form .service-price-control {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-left: 0;
+  background: #F19100;
+  color: white;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+body .modal-dialog .modal-content .modal-body .add-form .btn-grey-outline {
+  width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-style: dashed;
+  color: #F19100;
+}
+
+body .modal-dialog .modal-content .modal-body .tips {
+  padding: 1rem;
+  background: #fafafa;
+}
+
+body .modal-dialog .modal-content .modal-body .tips .card-title {
+  color: #00A099;
+}
+
+body .modal-dialog .modal-content .modal-body .tips ol {
+  margin: 0;
+  padding: 0;
+  padding-left: 11px;
+}
+
+@media (min-width: 992px) {
+  body .modal-lg {
+    max-width: 1130px;
+  }
+}
+
 /**********************
   NAVBAR 
 ***********************/
@@ -234,7 +332,7 @@ body .card .card-body .card-title {
   background: white;
   -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
   box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
-  z-index: 9999;
+  z-index: 999;
 }
 
 .navbar .navbar-brand {

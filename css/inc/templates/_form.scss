@@ -1,6 +1,10 @@
 .form-group {
   margin: 0;
 
+  .form-text {
+    font-style: italic;
+  }
+
   .ddl {
     position: relative;
     border: 1px solid #ccc;

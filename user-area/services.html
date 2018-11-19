@@ -22,7 +22,7 @@
 <body class="no-btm-margin">
   <header>
     <nav class="navbar navbar-expand-lg">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="/user-area/dashboard.html">
         <img src="../img/orombotree-logo@2x.png" alt="">
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -146,7 +146,7 @@
           <a class="nav-link" href="#">My Projects</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="#">My Services Profiles <span></span></a>
+          <a class="nav-link active" href="/user-area/service-profiles.html">My Services Profiles <span></span></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">My Portfolio</a>
@@ -156,8 +156,8 @@
     <div class="user-content">
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="#"><i class="fal fa-home"></i></a></li>
-          <li class="breadcrumb-item"><a href="#">My Service Profiles</a></li>
+          <li class="breadcrumb-item"><a href="/user-area/dashboard.html"><i class="fal fa-home"></i></a></li>
+          <li class="breadcrumb-item"><a href="/user-area/service-profiles.html">My Service Profiles</a></li>
           <li class="breadcrumb-item active" aria-current="page">Web Developer</li>
         </ol>
       </nav>
@@ -222,44 +222,7 @@
     </div>
   </main>
 
-  <!-- <footer class="footer">
-    <div class="container">
-      <img src="../img/orombotree-icon@2x.png" alt="Orombo Tree" class="logo">
-      <div class="footer-links d-flex bd-highlight">
-        <div class="footer-links-col flex-fill">
-          <ul>
-            <li><a href="">About us</a></li>
-            <li><a href="">Blog</a></li>
-            <li><a href="">Feed Back</a></li>
-          </ul>
-        </div>
-        <div class="footer-links-col flex-fill">
-          <ul>
-            <li><a href="">COMMUNITY</a></li>
-            <li><a href="">TRUST & SAFETY</a></li>
-            <li><a href="">HELP & SUPPORT</a></li>
-          </ul>
-        </div>
-        <div class="footer-links-col flex-fill">
-          <ul>
-            <li><a href="">Terms & Conditions</a></li>
-            <li><a href="">Privacy Policy</a></li>
-            <li><a href="">Cookie Policy</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="social-media d-flex justify-content-center">
-        <ul>
-          <li><a href=""><i class="fab fa-facebook"></i></a></li>
-          <li><a href=""><i class="fab fa-twitter"></i></a></li>
-          <li><a href=""><i class="fab fa-linkedin"></i></a></li>
-        </ul>
-      </div>
-      <p class="text-center">&copy;2018 - Orombo Tree</p>
-    </div>
-  </footer> -->
-
-  <!-- Modal -->
+  <!-- Add Service Modal -->
   <div class="modal fade bd-addservice-modal-lg" tabindex="-1" role="dialog" aria-labelledby="addServiceModalLabel"
     aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
@@ -336,7 +299,10 @@
                 </div>
                 <div class="row pb-3">
                   <div class="col-12 p-0">
-                    <button class="btn btn-grey-outline">Upload video or photos</button>
+                    <button class="btn btn-grey-outline">Upload Service Pictures or Videos<br><small><em>Select up to 5</em></small></button>
+                    <div class="service-images pt-2">
+                      <div class="service-image"></div>
+                    </div>
                   </div>
                 </div>
                 <div class="row pb-3">

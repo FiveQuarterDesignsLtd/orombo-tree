@@ -1071,17 +1071,21 @@ main.user-area .user-content .page-content {
 }
 
 main.user-area .user-content .page-content .card {
-  background: white;
   margin-bottom: 20px;
 }
 
 main.user-area .user-content .page-content .card .card-img-top {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
+  position: relative;
 }
 
 main.user-area .user-content .page-content .card .card-body {
   padding: .25rem .75rem;
+  position: absolute;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.75);
+  border-top-right-radius: 15px;
 }
 
 main.user-area .user-content .page-content .card .card-body .service-category .badge {
@@ -1094,7 +1098,9 @@ main.user-area .user-content .page-content .card .card-body .service-category .b
 
 main.user-area .user-content .page-content .card .card-body .card-title {
   margin-top: .75rem;
-  height: 50px;
+  font-weight: 500;
+  margin: 0;
+  line-height: 0.875rem;
 }
 
 main.user-area .user-content .page-content .card .card-body .card-title a {
@@ -1104,8 +1110,17 @@ main.user-area .user-content .page-content .card .card-body .card-title a {
 }
 
 main.user-area .user-content .page-content .card .card-body .card-title a:hover {
-  color: #F19100;
+  color: #00A099;
   text-decoration: none;
+}
+
+main.user-area .user-content .page-content .card .card-body .card-title .verified {
+  color: #00A099;
+}
+
+main.user-area .user-content .page-content .card .card-body .card-title .rating {
+  font-size: 0.5rem;
+  color: #F19100;
 }
 
 main.user-area .user-content .page-content .card .card-body .btn-view-services {

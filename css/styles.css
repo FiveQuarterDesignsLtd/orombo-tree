@@ -1059,7 +1059,6 @@ main.user-area .user-content .page-title .page-actions .dropdown .dropdown-menu 
 }
 
 main.user-area .user-content .page-title .page-actions .btn-new {
-  margin-left: .75rem;
   width: auto;
   border-radius: 4px;
 }
@@ -1070,17 +1069,17 @@ main.user-area .user-content .page-content {
   height: calc(100% - 183px);
 }
 
-main.user-area .user-content .page-content .card {
+main.user-area .user-content .page-content.my-profiles .card {
   margin-bottom: 20px;
 }
 
-main.user-area .user-content .page-content .card .card-img-top {
+main.user-area .user-content .page-content.my-profiles .card .card-img-top {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
   position: relative;
 }
 
-main.user-area .user-content .page-content .card .card-body {
+main.user-area .user-content .page-content.my-profiles .card .card-body {
   padding: .25rem .75rem;
   position: absolute;
   bottom: 0;
@@ -1088,62 +1087,138 @@ main.user-area .user-content .page-content .card .card-body {
   border-top-right-radius: 15px;
 }
 
-main.user-area .user-content .page-content .card .card-body .service-category .badge {
+main.user-area .user-content .page-content.my-profiles .card .card-body .service-category .badge {
   font-weight: 400;
 }
 
-main.user-area .user-content .page-content .card .card-body .service-category .badge.badge-category {
+main.user-area .user-content .page-content.my-profiles .card .card-body .service-category .badge.badge-category {
   background: #eeeeed;
 }
 
-main.user-area .user-content .page-content .card .card-body .card-title {
+main.user-area .user-content .page-content.my-profiles .card .card-body .card-title {
   margin-top: .75rem;
   font-weight: 500;
   margin: 0;
   line-height: 0.875rem;
 }
 
-main.user-area .user-content .page-content .card .card-body .card-title a {
+main.user-area .user-content .page-content.my-profiles .card .card-body .card-title a {
   color: #3C3B3A;
   -webkit-transition: ease .5s all;
   transition: ease .5s all;
 }
 
-main.user-area .user-content .page-content .card .card-body .card-title a:hover {
+main.user-area .user-content .page-content.my-profiles .card .card-body .card-title a:hover {
   color: #00A099;
   text-decoration: none;
 }
 
-main.user-area .user-content .page-content .card .card-body .card-title .verified {
+main.user-area .user-content .page-content.my-profiles .card .card-body .card-title .verified {
   color: #00A099;
 }
 
-main.user-area .user-content .page-content .card .card-body .card-title .rating {
+main.user-area .user-content .page-content.my-profiles .card .card-body .card-title .rating {
   font-size: 0.5rem;
   color: #F19100;
 }
 
-main.user-area .user-content .page-content .card .card-body .btn-view-services {
+main.user-area .user-content .page-content.my-profiles .card .card-body .btn-view-services {
   width: 100%;
   font-size: 0.875rem;
   margin-bottom: .75rem;
 }
 
-main.user-area .user-content .page-content .card .card-body .btn-view-services:hover {
+main.user-area .user-content .page-content.my-profiles .card .card-body .btn-view-services:hover {
   background: #F19100;
 }
 
-main.user-area .user-content .page-content .btn-cover-img {
-  width: 100%;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  border-radius: 10px;
-  border-style: dashed;
+main.user-area .user-content .page-content.my-profiles .profile-cover-img {
+  height: 200px;
+  background: #eeeeed;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: ease .5s all;
+  transition: ease .5s all;
 }
 
-main.user-area .user-content .page-content .btn-cover-img:hover {
-  border: 1px solid #F19100;
-  color: #F19100;
+main.user-area .user-content .page-content.my-profiles .profile-cover-img i {
+  color: #bcbbb9;
+  font-size: 3rem;
+}
+
+main.user-area .user-content .page-content.my-profiles .profile-cover-img .btn-update-cover-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 0;
+  border-bottom-left-radius: 5px;
+  width: auto;
+  opacity: 0;
+  -webkit-transition: ease .5s all;
+  transition: ease .5s all;
+}
+
+main.user-area .user-content .page-content.my-profiles .profile-cover-img .btn-update-cover-img i {
+  color: white;
+  font-size: 1rem;
+}
+
+main.user-area .user-content .page-content.my-profiles .profile-cover-img:hover {
+  background: #d5d4d3;
+}
+
+main.user-area .user-content .page-content.my-profiles .profile-cover-img:hover .btn-update-cover-img {
+  opacity: 1;
+}
+
+main.user-area .user-content .page-content .user-info {
+  width: 300px;
+  background: white;
+  padding: 1rem;
+  border-bottom: 1px solid rgba(60, 59, 58, 0.2);
+}
+
+main.user-area .user-content .page-content .user-info .user-pic {
+  margin: auto;
+  width: 50px;
+  height: 50px;
+  background: #00A099;
+  border-radius: 35px;
+  position: relative;
+  -webkit-transition: ease .5s all;
+  transition: ease .5s all;
+}
+
+main.user-area .user-content .page-content .user-info .user-pic img {
+  width: 50px;
+  height: 50px;
+  border-radius: 35px;
+}
+
+main.user-area .user-content .page-content .user-info .user-pic:hover a {
+  background: rgba(241, 145, 0, 0.8);
+  color: white;
+}
+
+main.user-area .user-content .page-content .user-info .user-name {
+  margin-top: .5rem;
+  line-height: 1rem;
+}
+
+main.user-area .user-content .page-content .user-info .user-name span {
+  text-transform: uppercase;
+}
+
+main.user-area .user-content .page-content .user-info .user-name span small {
+  text-transform: capitalize;
 }
 
 /**********************

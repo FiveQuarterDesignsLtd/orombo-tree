@@ -1,0 +1,54 @@
+.breadcrumb {
+  background: white;
+  border-radius: 0;
+  border-bottom: 2px solid rgba($orombogrey, .1);
+  text-transform: uppercase;
+  padding: .75rem 1rem .75rem 2.5rem;
+  margin-bottom: 0;
+  position: sticky;
+
+  .breadcrumb-item {
+    font-size: 0.75rem;
+
+    &::before {
+      color: lighten($orombogrey, 50%);
+    }
+
+    a {
+      color: $oromboorange;
+    }
+  }
+}
+
+.page-title {
+  padding: .75rem 1rem .75rem 2.5rem;
+  border-bottom: 2px solid rgba($orombogrey, .05);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  position: sticky;
+
+  h1 {
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 1.5rem;
+  }
+
+  .page-actions {
+    display: flex;
+    align-content: center;
+
+    .dropdown {
+      .dropdown-menu {
+        width: 250px;
+      }
+    }
+
+    .btn-new {
+      width: auto;
+      border-radius: 4px;
+    }
+  }
+}

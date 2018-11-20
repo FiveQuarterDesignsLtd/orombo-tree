@@ -1,138 +1,57 @@
 .user-content {
   background: lighten($orombogrey, 74.5%);
 
-  .breadcrumb {
-    background: white;
-    border-radius: 0;
-    border-bottom: 2px solid rgba($orombogrey, .1);
-    text-transform: uppercase;
-    padding: .75rem 1rem .75rem 2.5rem;
-    margin-bottom: 0;
-    position: sticky;
-
-    .breadcrumb-item {
-      font-size: 0.75rem;
-
-      &::before {
-        color: lighten($orombogrey, 50%);
-      }
-
-      a {
-        color: $oromboorange;
-      }
-    }
-  }
-
-  .page-title {
-    padding: .75rem 1rem .75rem 2.5rem;
-    border-bottom: 2px solid rgba($orombogrey, .05);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: white;
-    position: sticky;
-
-    h1 {
-      margin: 0;
-      text-transform: uppercase;
-      font-weight: 300;
-      font-size: 1.5rem;
-    }
-
-    .page-actions {
-      display: flex;
-      align-content: center;
-
-      .dropdown {
-        .dropdown-menu {
-          width: 250px;
-        }
-      }
-
-      .btn-new {
-        margin-left: .75rem;
-        width: auto;
-        border-radius: 4px;
-      }
-    }
-  }
+  @import '../templates/_breadcrumbs';
 
   .page-content {
     padding: .75rem 1rem .75rem 2.5rem;
     overflow-y: scroll;
     height: calc(100% - 183px);
 
-    .card {
-      margin-bottom: 20px;
+    @import 'my-profiles/_my-profiles';
 
-      .card-img-top {
-        border-top-left-radius: 0;
-        border-top-right-radius: 0;
+    
+
+    .user-info {
+      width: 300px;
+      background: white;
+      padding: 1rem;
+      border-bottom: 1px solid rgba($orombogrey, .2);
+
+      .user-pic {
+        margin: auto;
+        width: 50px;
+        height: 50px;
+        background: $orombogreen;
+        border-radius: 35px;
         position: relative;
-      }
+        transition: ease .5s all;
 
-      .card-body {
-        padding: .25rem .75rem;
-        position: absolute;
-        bottom: 0;
-        background: rgba(white, .75);
-        border-top-right-radius: 15px;
-
-        .service-category {
-          .badge {
-            font-weight: 400;
-
-            &.badge-category {
-              background: lighten($orombogrey, 70%);
-            }
-          }
+        img {
+          width: 50px;
+          height: 50px;
+          border-radius: 35px;
         }
 
-        .card-title {
-          margin-top: .75rem;
-          font-weight: 500;
-          margin: 0;
-          line-height: 0.875rem;
-
+        &:hover {
           a {
-            color: $orombogrey;
-            transition: ease .5s all;
-
-            &:hover {
-              color: $orombogreen;
-              text-decoration: none;
-            }
-          }
-          .verified {
-            color: $orombogreen;
-          }
-          .rating {
-            font-size: 0.5rem;
-            color: $oromboorange;
-          }
-        }
-
-        .btn-view-services {
-          width: 100%;
-          font-size: 0.875rem;
-          margin-bottom: .75rem;
-
-          &:hover {
-            background: $oromboorange;
+            background: rgba($oromboorange, .8);
+            color: white
           }
         }
       }
-    }
 
-    .btn-cover-img {
-      width: 100%;
-      padding-top: 2rem;
-      padding-bottom: 2rem;
-      border-radius: 10px;
-      border-style: dashed;
-      &:hover {
-        border: 1px solid $oromboorange;
-        color: $oromboorange;
+      .user-name {
+        margin-top: .5rem;
+        line-height: 1rem;
+
+        span {
+          text-transform: uppercase;
+
+          small {
+            text-transform: capitalize;
+          }
+        }
       }
     }
 

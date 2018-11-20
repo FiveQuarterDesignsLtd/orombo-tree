@@ -23,7 +23,7 @@
   <header>
     <nav class="navbar navbar-expand-lg">
       <a class="navbar-brand" href="/user-area/dashboard.html">
-        <img src="../img/orombotree-logo@2x.png" alt="">
+        <img src="../../img/orombotree-logo@2x.png" alt="">
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -163,6 +163,9 @@
       </nav>
       <div class="page-title">
         <h1>Add New Profile</h1>
+        <div class="page-actions">
+          <a href="#" class="btn btn-green btn-new">Preview profile</a>
+        </div>
       </div>
       <div class="page-content">
         <div class="container p-0">
@@ -175,9 +178,14 @@
               <input type="text" class="form-control" id="txtProfileTitle" aria-describedby="profileTitle" placeholder="What's your profile title?">
               <small id="emailHelp" class="form-text text-muted">e.g. Name of the company this profile will represent</small>
             </div>
-            <div class="form-group">
+            <div class="form-group pb-3">
               <label for="txtProfileDescription" class="sr-only">What do you need from the Buyer to get started?</label>
-              <textarea name="" id="txtProfileDescription" rows="10" class="form-control" placeholder="Add the profile description. Describe what this profile is being used for with any relevant information."></textarea>
+              <textarea name="" id="txtProfileDescription" rows="5" class="form-control" placeholder="Add the profile description. Describe what this profile is being used for with any relevant information."></textarea>
+            </div>
+            <div class="form-group pb-3">
+              <label for="txtTags" class="sr-only">Skills</label>
+              <input type="text" class="form-control" id="txtTags" aria-describedby="profileTitle" placeholder="Type in your skills">
+              <small id="emailHelp" class="form-text text-muted">Separate your skills with a comma</small>
             </div>
           </form>
         </div>

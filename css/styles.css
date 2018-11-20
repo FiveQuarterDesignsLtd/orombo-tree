@@ -1069,6 +1069,12 @@ main.user-area .user-content .page-content {
   height: calc(100% - 183px);
 }
 
+main.user-area .user-content .page-content .badge-skills {
+  background: #d5d4d3;
+  font-weight: 400;
+  border-radius: 2px;
+}
+
 main.user-area .user-content .page-content.my-profiles .card {
   margin-bottom: 20px;
 }
@@ -1179,14 +1185,23 @@ main.user-area .user-content .page-content.my-profiles .profile-cover-img:hover 
   opacity: 1;
 }
 
-main.user-area .user-content .page-content .user-info {
+main.user-area .user-content .page-content.my-profiles .add-profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main.user-area .user-content .page-content.my-profiles .add-profile .user-info {
   width: 300px;
   background: white;
   padding: 1rem;
   border-bottom: 1px solid rgba(60, 59, 58, 0.2);
 }
 
-main.user-area .user-content .page-content .user-info .user-pic {
+main.user-area .user-content .page-content.my-profiles .add-profile .user-info .user-pic {
   margin: auto;
   width: 50px;
   height: 50px;
@@ -1197,28 +1212,50 @@ main.user-area .user-content .page-content .user-info .user-pic {
   transition: ease .5s all;
 }
 
-main.user-area .user-content .page-content .user-info .user-pic img {
+main.user-area .user-content .page-content.my-profiles .add-profile .user-info .user-pic img {
   width: 50px;
   height: 50px;
   border-radius: 35px;
 }
 
-main.user-area .user-content .page-content .user-info .user-pic:hover a {
+main.user-area .user-content .page-content.my-profiles .add-profile .user-info .user-pic:hover a {
   background: rgba(241, 145, 0, 0.8);
   color: white;
 }
 
-main.user-area .user-content .page-content .user-info .user-name {
+main.user-area .user-content .page-content.my-profiles .add-profile .user-info .user-name {
   margin-top: .5rem;
   line-height: 1rem;
 }
 
-main.user-area .user-content .page-content .user-info .user-name span {
+main.user-area .user-content .page-content.my-profiles .add-profile .user-info .user-name span {
   text-transform: uppercase;
 }
 
-main.user-area .user-content .page-content .user-info .user-name span small {
+main.user-area .user-content .page-content.my-profiles .add-profile .user-info .user-name span small {
   text-transform: capitalize;
+}
+
+main.user-area .user-content .page-content.my-profiles .add-profile .user-info .rating {
+  color: #F19100;
+}
+
+main.user-area .user-content .page-content.my-profiles .add-profile .user-info .user-intro {
+  font-size: 0.875rem;
+}
+
+main.user-area .user-content .page-content.my-profiles .add-profile .user-info .user-intro a {
+  color: #00A099;
+}
+
+main.user-area .user-content .page-content.my-profiles .add-profile .user-info .user-intro a.btn {
+  color: white;
+}
+
+main.user-area .user-content .page-content.my-profiles .add-profile .user-info .user-skills h1 {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  font-weight: 500;
 }
 
 /**********************

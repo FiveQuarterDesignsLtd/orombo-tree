@@ -1,0 +1,181 @@
+&.my-profiles {
+
+  .card {
+    margin-bottom: 20px;
+
+    .card-img-top {
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+      position: relative;
+    }
+
+    .card-body {
+      padding: .25rem .75rem;
+      position: absolute;
+      bottom: 0;
+      background: rgba(white, .75);
+      border-top-right-radius: 15px;
+
+      .service-category {
+        .badge {
+          font-weight: 400;
+
+          &.badge-category {
+            background: lighten($orombogrey, 70%);
+          }
+        }
+      }
+
+      .card-title {
+        margin-top: .75rem;
+        font-weight: 500;
+        margin: 0;
+        line-height: 0.875rem;
+
+        a {
+          color: $orombogrey;
+          transition: ease .5s all;
+
+          &:hover {
+            color: $orombogreen;
+            text-decoration: none;
+          }
+        }
+
+        .verified {
+          color: $orombogreen;
+        }
+
+        .rating {
+          font-size: 0.5rem;
+          color: $oromboorange;
+        }
+      }
+
+      .btn-view-services {
+        width: 100%;
+        font-size: 0.875rem;
+        margin-bottom: .75rem;
+
+        &:hover {
+          background: $oromboorange;
+        }
+      }
+    }
+  }
+
+  .profile-cover-img {
+    height: 200px;
+    background: lighten($orombogrey, 70%);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: ease .5s all;
+
+    i {
+      color: lighten($orombogrey, 50%);
+      font-size: 3rem;
+    }
+
+    .btn-update-cover-img {
+      position: absolute;
+      top: 0;
+      right: 0;
+      border-radius: 0;
+      border-bottom-left-radius: 5px;
+      width: auto;
+      opacity: 0;
+      transition: ease .5s all;
+
+      i {
+        color: white;
+        font-size: 1rem;
+      }
+    }
+
+    &:hover {
+      background: lighten($orombogrey, 60%);
+
+      .btn-update-cover-img {
+        opacity: 1;
+      }
+    }
+  }
+
+  .add-profile {
+    display: flex;
+    justify-content: space-between;
+
+    .user-info {
+      width: 300px;
+      background: white;
+      padding: 1rem;
+      border-bottom: 1px solid rgba($orombogrey, .2);
+
+      .user-pic {
+        margin: auto;
+        width: 50px;
+        height: 50px;
+        background: $orombogreen;
+        border-radius: 35px;
+        position: relative;
+        transition: ease .5s all;
+
+        img {
+          width: 50px;
+          height: 50px;
+          border-radius: 35px;
+        }
+
+        &:hover {
+          a {
+            background: rgba($oromboorange, .8);
+            color: white
+          }
+        }
+      }
+
+      .user-name {
+        margin-top: .5rem;
+        line-height: 1rem;
+
+        span {
+          text-transform: uppercase;
+
+          small {
+            text-transform: capitalize;
+          }
+        }
+      }
+
+      .rating {
+        color: $oromboorange;
+      }
+
+      .user-intro {
+        font-size: 0.875rem;
+
+        a {
+          color: $orombogreen;
+
+          &.btn {
+            color: white;
+          }
+        }
+      }
+
+      .user-skills {
+        h1 {
+          font-size: 0.875rem;
+          text-transform: uppercase;
+          font-weight: 500;
+        }
+      }
+    }
+
+    .profile-details {
+      
+    }
+  }
+}

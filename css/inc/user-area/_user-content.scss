@@ -1,114 +1,20 @@
 .user-content {
   background: lighten($orombogrey, 74.5%);
 
-  .breadcrumb {
-    background: white;
-    border-radius: 0;
-    border-bottom: 2px solid rgba($orombogrey, .1);
-    text-transform: uppercase;
-    padding: .75rem 1rem .75rem 2.5rem;
-    margin-bottom: 0;
-    position: sticky;
-
-    .breadcrumb-item {
-      font-size: 0.75rem;
-
-      &::before {
-        color: lighten($orombogrey, 50%);
-      }
-
-      a {
-        color: $oromboorange;
-      }
-    }
-  }
-
-  .page-title {
-    padding: .75rem 1rem .75rem 2.5rem;
-    border-bottom: 2px solid rgba($orombogrey, .05);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: white;
-    position: sticky;
-
-    h1 {
-      margin: 0;
-      text-transform: uppercase;
-      font-weight: 300;
-      font-size: 1.5rem;
-    }
-
-    .page-actions {
-      display: flex;
-      align-content: center;
-
-      .dropdown {
-        .dropdown-menu {
-          width: 250px;
-        }
-      }
-
-      .btn-new {
-        margin-left: .75rem;
-        width: auto;
-        border-radius: 4px;
-      }
-    }
-  }
+  @import '../templates/_breadcrumbs';
 
   .page-content {
     padding: .75rem 1rem .75rem 2.5rem;
     overflow-y: scroll;
     height: calc(100% - 183px);
 
-    .card {
-      background: white;
-      margin-bottom: 20px;
-
-      .card-img-top {
-        border-top-left-radius: 0;
-        border-top-right-radius: 0;
-      }
-
-      .card-body {
-        padding: .25rem .75rem;
-
-        .service-category {
-          .badge {
-            font-weight: 400;
-
-            &.badge-category {
-              background: lighten($orombogrey, 70%);
-            }
-          }
-        }
-
-        .card-title {
-          margin-top: .75rem;
-          height: 50px;
-
-          a {
-            color: $orombogrey;
-            transition: ease .5s all;
-
-            &:hover {
-              color: $oromboorange;
-              text-decoration: none;
-            }
-          }
-        }
-
-        .btn-view-services {
-          width: 100%;
-          font-size: 0.875rem;
-          margin-bottom: .75rem;
-
-          &:hover {
-            background: $oromboorange;
-          }
-        }
-      }
+    .badge-skills {
+      background: lighten($orombogrey, 60%);
+      font-weight: 400;
+      border-radius: 2px;
     }
+
+    @import 'my-profiles/_my-profiles';
+
   }
 }

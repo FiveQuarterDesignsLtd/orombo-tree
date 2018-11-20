@@ -9,12 +9,13 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
     crossorigin="anonymous">
-  <link rel="stylesheet" href="../css/inc/fontawesome.min.css">
-  <link rel="stylesheet" href="../css/inc/brands.min.css">
-  <link rel="stylesheet" href="../css/inc/solid.min.css">
-  <link rel="stylesheet" href="../css/inc/regular.min.css">
-  <link rel="stylesheet" href="../css/inc/light.min.css">
-  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../../css/inc/fontawesome.min.css">
+  <link rel="stylesheet" href="../../css/inc/solid.min.css">
+  <link rel="stylesheet" href="../../css/inc/regular.min.css">
+  <link rel="stylesheet" href="../../css/inc/light.min.css">
+  <link rel="stylesheet" href="../../css/inc/brands.min.css">
+  <link rel="stylesheet" href="../../css/inc/bootstrap-tagsinput.css">
+  <link rel="stylesheet" href="../../css/styles.css">
 
   <title>Orombo Tree</title>
 </head>
@@ -22,8 +23,8 @@
 <body class="no-btm-margin">
   <header>
     <nav class="navbar navbar-expand-lg">
-      <a class="navbar-brand" href="../index.html">
-        <img src="../img/orombotree-logo@2x.png" alt="">
+      <a class="navbar-brand" href="/user-area/dashboard.html">
+        <img src="../../img/orombotree-logo@2x.png" alt="">
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -131,7 +132,7 @@
     <div class="user-menu">
       <div class="user-info">
         <div class="user-pic">
-          <img src="../img/profile-pic.jpg" alt="Profile Pic">
+          <img src="../../img/profile-pic.jpg" alt="Profile Pic">
           <a href="#" class="edit-user-pic"><i class="fas fa-pencil"></i></a>
         </div>
         <div class="user-name">
@@ -140,22 +141,89 @@
       </div>
       <ul class="nav flex-column">
         <li class="nav-item">
-          <a class="nav-link active" href="/user-area/dashboard.html">Dashboard <span></span></a>
+          <a class="nav-link" href="/user-area/dashboard.html">Dashboard <span></span></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">My Projects</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/user-area/my-profiles/my-profiles.html">My Profiles</a>
+          <a class="nav-link active" href="/user-area/my-profiles/my-profiles.html">My Profiles <span></span></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">My Portfolio</a>
         </li>
       </ul>
     </div>
-    <div class="user-content"></div>
-  </main>
+    <div class="user-content">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="/user-area/dashboard.html"><i class="fal fa-home"></i></a></li>
+          <li class="breadcrumb-item"><a href="/user-area/my-profiles/add-profile.html">My Profiles</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Add Profile</li>
+        </ol>
+      </nav>
+      <div class="page-title">
+        <h1>Add New Profile</h1>
+        <div class="page-actions">
+          <span data-toggle="tooltip" data-placement="left" title="Preview Profile"><a href="#" class="btn btn-grey btn-new"><i
+                class="fal fa-eye"></i></a></span>
+        </div>
+      </div>
+      <div class="page-content my-profiles">
+        <div class="profile-cover-img">
+          <i class="fal fa-image "></i>
+          <button class="btn btn-orange btn-update-cover-img"><i class="fal fa-pencil"></i> Update Cover Pic</button>
+        </div>
+        <div class="add-profile p-0">
+          <div class="user-info">
+            <div class="user-pic">
+              <img src="../../img/profile-pic.jpg" alt="Profile Pic">
+            </div>
+            <div class="user-name text-center">
+              <span>Bola Ilumoka<br><small>London</small></span>
+            </div>
+            <div class="rating text-center" data-toggle="tooltip" data-placement="bottom" title="4 out 5 Stars - Excellent"><i
+                class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                class="fal fa-star"></i></div>
+            <hr>
+            <div class="user-intro">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat...<a href="#">Read more</a></p>
+              <p class="text-center"><a href="#" class="btn btn-orange">Contact Bola</a></p>
+            </div>
+            <hr>
+            <div class="user-skills">
+              <h1>Skills</h1>
+              <p>
+                <span class="badge badge-skills">HTML</span> <span class="badge badge-skills">CSS</span> <span class="badge badge-skills">JAVASCRIPT</span> <span class="badge badge-skills">GARDENER</span>
+              </p>
+            </div>
+          </div>
+          <div class="profile-details">
 
+          </div>
+          <!-- <form action="">
+            <div class="form-group pb-3">
+              <label for="txtProfileTitle" class="sr-only">Profile title</label>
+              <input type="text" class="form-control" id="txtProfileTitle" aria-describedby="profileTitle" placeholder="What's your profile title?">
+              <small id="emailHelp" class="form-text text-muted">e.g. Name of the company this profile will represent</small>
+            </div>
+            <div class="form-group pb-3">
+              <label for="txtProfileDescription" class="sr-only">What do you need from the Buyer to get started?</label>
+              <textarea name="" id="txtProfileDescription" rows="5" class="form-control" placeholder="Add the profile description. Describe what this profile is being used for with any relevant information."></textarea>
+            </div>
+            <div class="form-group pb-3">
+              <label for="txtTags" class="sr-only">Skills</label>
+              <input type="text" class="form-control" id="txtTags" aria-describedby="profileTitle" value="" data-role="tagsinput"
+                placeholder="Put your skills here">
+              <small id="emailHelp" class="form-text text-muted">Separate your skills with a comma</small>
+            </div>
+          </form> -->
+        </div>
+      </div>
+    </div>
+  </main>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -165,6 +233,12 @@
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
+  <script src="../../js/bootstrap-tagsinput.js"></script>
+  <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+  </script>
 </body>
 
 </html>

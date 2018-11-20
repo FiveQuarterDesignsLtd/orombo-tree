@@ -1,6 +1,15 @@
 .form-group {
   margin: 0;
 
+  .form-control {
+    &:focus {
+      outline: none;
+      border-color: inherit;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+    }
+  }
+
   .form-text {
     font-style: italic;
   }
@@ -14,6 +23,7 @@
 
     .form-control {
       border: 0;
+
       option {
         padding-left: 1rem;
       }

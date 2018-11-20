@@ -187,6 +187,13 @@ body .form-group {
   margin: 0;
 }
 
+body .form-group .form-control:focus {
+  outline: none;
+  border-color: inherit;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
 body .form-group .form-text {
   font-style: italic;
 }
@@ -1256,6 +1263,98 @@ main.user-area .user-content .page-content.my-profiles .add-profile .user-info .
   font-size: 0.875rem;
   text-transform: uppercase;
   font-weight: 500;
+}
+
+main.user-area .user-content .page-content.my-profiles .add-profile .profile-details {
+  width: calc(100% - 300px);
+}
+
+main.user-area .user-content .page-content.my-profiles .add-profile .profile-details .profile-title,
+main.user-area .user-content .page-content.my-profiles .add-profile .profile-details .profile-description,
+main.user-area .user-content .page-content.my-profiles .add-profile .profile-details .profile-portfolio {
+  padding: .75rem 1rem .75rem 1rem;
+}
+
+main.user-area .user-content .page-content.my-profiles .add-profile .profile-details .profile-title .form-control,
+main.user-area .user-content .page-content.my-profiles .add-profile .profile-details .profile-description .form-control,
+main.user-area .user-content .page-content.my-profiles .add-profile .profile-details .profile-portfolio .form-control {
+  border: 0;
+  background: transparent;
+  border-radius: 0;
+  outline: none;
+}
+
+main.user-area .user-content .page-content.my-profiles .add-profile .profile-details .profile-title {
+  border-bottom: 2px solid rgba(60, 59, 58, 0.05);
+}
+
+main.user-area .user-content .page-content.my-profiles .add-profile .profile-details .profile-title .form-control {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+main.user-area .user-content .page-content.my-profiles .add-profile .profile-details .profile-description .form-control {
+  background: white;
+}
+
+main.user-area .user-content .page-content.my-profiles .add-profile .profile-details .profile-portfolio {
+  width: 100%;
+}
+
+main.user-area .user-content .page-content.my-profiles .add-profile .profile-details .profile-portfolio .portfolio-title {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: 2px solid rgba(60, 59, 58, 0.05);
+  border-bottom: 2px solid rgba(60, 59, 58, 0.05);
+}
+
+main.user-area .user-content .page-content.my-profiles .add-profile .profile-details .profile-portfolio .portfolio-title h1 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+main.user-area .user-content .page-content.my-profiles .add-profile .profile-details .profile-portfolio .portfolio-title .add-portfolio-item .btn-green {
+  width: auto;
+}
+
+main.user-area .user-content .page-content.my-profiles .add-profile .profile-details .profile-portfolio .portfolio-items {
+  margin-top: 1rem;
+}
+
+main.user-area .user-content .page-content.my-profiles .add-profile .profile-details .profile-portfolio .portfolio-items .portfolio-item {
+  width: 24%;
+  min-height: 100px;
+  border-radius: 5px;
+  border: 2px dashed #d5d4d3;
+  background: #eeeeed;
+  -webkit-transition: ease .5s all;
+  transition: ease .5s all;
+}
+
+main.user-area .user-content .page-content.my-profiles .add-profile .profile-details .profile-portfolio .portfolio-items .portfolio-item:hover {
+  background: #e1e1e0;
+  border-style: solid;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+main.user-area .user-content .page-content.my-profiles .add-profile .profile-details .profile-portfolio .portfolio-items .portfolio-item:hover:before {
+  font-family: 'Font Awesome 5 Pro';
+  content: "\f055";
+  color: white;
+  font-size: 2rem;
 }
 
 /**********************

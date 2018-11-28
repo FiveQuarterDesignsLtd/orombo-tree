@@ -165,8 +165,8 @@
       <div class="page-title">
         <h1>Add New Profile</h1>
         <div class="page-actions">
-          <span data-toggle="tooltip" data-placement="left" title="Preview Profile"><a href="#" class="btn btn-grey btn-new"><i
-                class="fal fa-eye"></i></a></span>
+          <span data-toggle="tooltip" data-placement="left" title="Preview Profile"><a href="#" class="btn btn-grey btn-new"
+              data-toggle="modal" data-target="#profilePreviewModal"><i class="fal fa-eye"></i></a></span>
         </div>
       </div>
       <div class="page-content my-profiles">
@@ -239,6 +239,107 @@
     </div>
   </main>
 
+  <!-- Profile Preview -->
+  <div class="modal fade" id="profilePreviewModal" tabindex="-1" role="dialog" aria-labelledby="profilePreviewModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-preview" role="document">
+      <div class="modal-content profile-preview-modal">
+        <div class="modal-body">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"><i class="fal fa-times"></i></span>
+          </button>
+          <div class="profile-cover-img" style="background: url(../../img/stationary_set_1600.jpg);">
+          </div>
+          <div class="profile-preview-info">
+            <div class="user-info">
+              <div class="user-pic">
+                <img src="../../img/profile-pic.jpg" alt="Profile Pic">
+              </div>
+              <div class="user-name text-center">
+                <span>Bola Ilumoka<br><small>London</small></span>
+              </div>
+              <div class="rating text-center" data-toggle="tooltip" data-placement="bottom" title="4 out 5 Stars - Excellent"><i
+                  class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                  class="fal fa-star"></i></div>
+              <hr>
+              <div class="user-intro">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                  et
+                  dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip
+                  ex ea commodo consequat...<a href="#">Read more</a></p>
+                <p class="text-center"><a href="#" class="btn btn-orange">Contact Bola</a></p>
+              </div>
+              <hr>
+              <div class="user-skills">
+                <h1>Skills</h1>
+                <p>
+                  <span class="badge badge-skills">HTML</span> <span class="badge badge-skills">CSS</span> <span class="badge badge-skills">JAVASCRIPT</span>
+                  <span class="badge badge-skills">GARDENER</span>
+                </p>
+              </div>
+            </div>
+            <div class="profile-details">
+              <div class="profile-title">
+                <h1>Test profile</h1>
+              </div>
+              <div class="profile-description">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                  et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                  qui officia deserunt mollit anim id est laborum.</p>
+              </div>
+              <div class="profile-portfolio">
+                <div class="portfolio-title">
+                  <h1>Profile Portfolio</h1>
+                </div>
+                <div class="portfolio-items d-flex justify-content-between">
+                  <div class="portfolio-item card">
+                    <img class="card-img-top" src="../../img/developers-img.jpg" alt="Service Profile image">
+                    <div class="card-body">
+                      <h1 class="card-title">
+                        <a href="#">Ilumoka Creative Agency</a>
+                      </h1>
+                      <!-- <a href="/" class="btn btn-grey btn-view-services">View/Edit Profile</a> -->
+                    </div>
+                  </div>
+                  <div class="portfolio-item card">
+                    <img class="card-img-top" src="../../img/developers-img.jpg" alt="Service Profile image">
+                    <div class="card-body">
+                      <h1 class="card-title">
+                        <a href="#">Ilumoka Creative Agency</a>
+                      </h1>
+                      <!-- <a href="/" class="btn btn-grey btn-view-services">View/Edit Profile</a> -->
+                    </div>
+                  </div>
+                  <div class="portfolio-item card">
+                    <img class="card-img-top" src="../../img/developers-img.jpg" alt="Service Profile image">
+                    <div class="card-body">
+                      <h1 class="card-title">
+                        <a href="#">Ilumoka Creative Agency</a>
+                      </h1>
+                      <!-- <a href="/" class="btn btn-grey btn-view-services">View/Edit Profile</a> -->
+                    </div>
+                  </div>
+                  <div class="portfolio-item card">
+                    <img class="card-img-top" src="../../img/developers-img.jpg" alt="Service Profile image">
+                    <div class="card-body">
+                      <h1 class="card-title">
+                        <a href="#">Ilumoka Creative Agency</a>
+                      </h1>
+                      <!-- <a href="/" class="btn btn-grey btn-view-services">View/Edit Profile</a> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Add Portfolio -->
   <div class="modal fade" id="addPortfolioModal" tabindex="-1" role="dialog" aria-labelledby="addPortfolioModalLabel"
     aria-hidden="true">
@@ -262,13 +363,14 @@
             </div>
             <div class="form-group">
               <label for="">Skills you used</label>
-              <input type="text" class="form-control inputtags" placeholder="Add commas to separate" data-role="tagsinput" value="Graphics">
+              <input type="text" class="form-control inputtags" placeholder="Add commas to separate" data-role="tagsinput"
+                value="Graphics">
             </div>
             <div class="profile-portfolio">
               <div class="portfolio-title">
                 <h1>Add Portfolio Images</h1>
                 <div class="add-portfolio-item" data-toggle="tooltip" data-placement="left" title="Add Portfolio Image">
-                  <button class="btn btn-green" ><i class="fal fa-plus"></i></button>
+                  <button class="btn btn-green"><i class="fal fa-plus"></i></button>
                 </div>
               </div>
               <div class="portfolio-items d-flex justify-content-between">

@@ -34,9 +34,16 @@
     text-transform: uppercase;
     font-weight: 300;
     font-size: 1.5rem;
+
+    small {
+      color: lighten($orombogrey, 30%);
+      font-style: italic;
+      font-size: 1rem;
+    }
   }
 
   .page-actions {
+    width: 40%;
     display: flex;
     align-content: center;
 
@@ -46,9 +53,25 @@
       }
     }
 
+    .search-control {
+      border: 0;
+      background: lighten($orombogrey, 70%);
+    }
+
     .btn-new {
       width: auto;
       border-radius: 4px;
+    }
+
+    .btn-search {
+      width: auto;
+    }
+
+    .btn-categories {
+      width: auto;
+      border-radius: 0;
+      padding-top: 7px;
+      padding-bottom: 7px;
     }
   }
 }

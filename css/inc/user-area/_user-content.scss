@@ -8,12 +8,6 @@
     overflow-y: scroll;
     height: calc(100% - 183px);
 
-    .badge-skills {
-      background: lighten($orombogrey, 60%);
-      font-weight: 400;
-      border-radius: 2px;
-    }
-
     @import 'my-profiles/_my-profiles';
 
   }

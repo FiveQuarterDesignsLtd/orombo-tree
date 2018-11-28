@@ -193,179 +193,182 @@
 
       .modal-body {
         padding: 0;
-      }
 
-      .profile-cover-img {
-        height: 200px;
-        background-size: cover !important;
-        background-position-y: center !important;
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: ease .5s all;
+        .profile-cover-img {
+          height: 200px;
+          background-size: cover !important;
+          background-position-y: center !important;
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: ease .5s all;
 
-        i {
-          color: lighten($orombogrey, 50%);
-          font-size: 3rem;
+          i {
+            color: lighten($orombogrey, 50%);
+            font-size: 3rem;
+          }
         }
-      }
 
-      .profile-preview-info {
-        padding: 0 1rem 1rem;
-        display: flex;
-        justify-content: space-between;
+        .profile-preview-info {
+          padding: 0 1rem 1rem;
+          display: flex;
+          justify-content: space-between;
 
-        .user-info {
-          width: 300px;
-          background: white;
-          padding: 1rem;
-          border-bottom: 1px solid rgba($orombogrey, .2);
+          .user-info {
+            width: 300px;
+            background: white;
+            padding: 2rem 1rem 1rem;
+            border-bottom: 1px solid rgba($orombogrey, .2);
 
-          .user-pic {
-            margin: auto;
-            width: 50px;
-            height: 50px;
-            background: $orombogreen;
-            border-radius: 35px;
-            position: relative;
-            transition: ease .5s all;
-
-            img {
+            .user-pic {
+              margin: auto;
               width: 50px;
               height: 50px;
+              background: $orombogreen;
               border-radius: 35px;
-            }
+              position: relative;
+              transition: ease .5s all;
 
-            &:hover {
-              a {
-                background: rgba($oromboorange, .8);
-                color: white
+              img {
+                width: 50px;
+                height: 50px;
+                border-radius: 35px;
+              }
+
+              &:hover {
+                a {
+                  background: rgba($oromboorange, .8);
+                  color: white
+                }
               }
             }
-          }
 
-          .user-name {
-            margin-top: .5rem;
-            line-height: 1rem;
+            .user-name {
+              margin-top: .5rem;
+              line-height: 1rem;
 
-            span {
-              text-transform: uppercase;
+              span {
+                text-transform: uppercase;
 
-              small {
-                text-transform: capitalize;
+                small {
+                  text-transform: capitalize;
+                }
               }
             }
-          }
 
-          .rating {
-            color: $oromboorange;
-          }
-
-          .user-intro {
-            font-size: 0.875rem;
-
-            a {
-              color: $orombogreen;
-
-              &.btn {
-                color: white;
-              }
+            .rating {
+              color: $oromboorange;
             }
-          }
 
-          .user-skills {
-            h1 {
+            .user-intro {
               font-size: 0.875rem;
-              text-transform: uppercase;
-              font-weight: 500;
+
+              a {
+                color: $orombogreen;
+
+                &.btn {
+                  color: white;
+                }
+              }
             }
-          }
-        }
 
-        .profile-details {
-          padding-top: 1rem;
-          width: calc(100% - 300px);
-
-          .profile-title,
-          .profile-description,
-          .profile-portfolio {
-            padding: .75rem 1rem .75rem 2rem;
-          }
-
-          .profile-title {
-            border-bottom: 2px solid rgba($orombogrey, .05);
-
-            h1 {
-              font-size: 1.5rem;
-              text-transform: uppercase;
-              margin-bottom: 0;
-              font-weight: 300;
+            .user-skills {
+              h1 {
+                font-size: 0.875rem;
+                text-transform: uppercase;
+                font-weight: 500;
+              }
+              p {
+                margin: 0;
+              }
             }
           }
 
-          .profile-description {
+          .profile-details {
+            padding-top: 1rem;
+            width: calc(100% - 300px);
 
-            p {
-              margin: 0;
+            .profile-title,
+            .profile-description,
+            .profile-portfolio {
+              padding: .75rem 1rem .75rem 2rem;
             }
-          }
 
-          .profile-portfolio {
-            width: 100%;
-
-            .portfolio-title {
-              padding-top: .75rem;
-              padding-bottom: .75rem;
-              display: flex;
-              justify-content: space-between;
-              align-items: center;
-              border-top: 2px solid rgba($orombogrey, .05);
+            .profile-title {
               border-bottom: 2px solid rgba($orombogrey, .05);
 
               h1 {
-                font-size: 1rem;
+                font-size: 1.5rem;
                 text-transform: uppercase;
-                margin: 0;
-              }
-
-              .add-portfolio-item {
-                .btn-green {
-                  width: auto;
-                }
+                margin-bottom: 0;
+                font-weight: 300;
               }
             }
 
-            .portfolio-items {
-              margin-top: 1rem;
-              flex-wrap: wrap;
+            .profile-description {
 
-              .portfolio-item {
-                width: 33%;
-                min-height: 100px;
-                border-radius: 0px;
-                border: 0;
-                margin-bottom: .5rem;
+              p {
+                margin: 0;
+              }
+            }
 
-                .card-img-top {
-                  border-radius: 0;
+            .profile-portfolio {
+              width: 100%;
+
+              .portfolio-title {
+                padding-top: .75rem;
+                padding-bottom: .75rem;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border-top: 2px solid rgba($orombogrey, .05);
+                border-bottom: 2px solid rgba($orombogrey, .05);
+
+                h1 {
+                  font-size: 1rem;
+                  text-transform: uppercase;
+                  margin: 0;
                 }
 
-                .card-body {
-                  margin-top: 0;
-                  padding: .5rem .75rem;
+                .add-portfolio-item {
+                  .btn-green {
+                    width: auto;
+                  }
+                }
+              }
 
-                  .card-title {
-                    font-size: 1rem;
+              .portfolio-items {
+                margin-top: 1rem;
+                flex-wrap: wrap;
 
-                    a {
-                      color: $orombogrey;
+                .portfolio-item {
+                  width: 33%;
+                  min-height: 100px;
+                  border-radius: 0px;
+                  border: 0;
+                  margin-bottom: .5rem;
+
+                  .card-img-top {
+                    border-radius: 0;
+                  }
+
+                  .card-body {
+                    margin-top: 0;
+                    padding: .5rem .75rem;
+
+                    .card-title {
+                      font-size: 1rem;
+
+                      a {
+                        color: $orombogrey;
+                      }
                     }
                   }
                 }
               }
-            }
 
+            }
           }
         }
       }

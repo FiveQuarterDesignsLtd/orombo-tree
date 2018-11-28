@@ -171,8 +171,8 @@
       </div>
       <div class="page-content my-profiles">
         <div class="profile-cover-img">
-          <i class="fal fa-image "></i>
-          <button class="btn btn-orange btn-update-cover-img"><i class="fal fa-pencil"></i> Update Cover Pic</button>
+          <span><i class="fal fa-image "></i></span>
+          <span>Click or Drag your image here</span>
         </div>
         <div class="add-profile p-0">
           <div class="user-info">
@@ -219,7 +219,7 @@
                 <div class="portfolio-title">
                   <h1>Profile Portfolio</h1>
                   <div class="add-portfolio-item" data-toggle="tooltip" data-placement="left" title="Add Portfolio Item">
-                    <button class="btn btn-green" data-toggle="modal" data-target="#addPortfolioModal"><i class="fal fa-plus"></i></button>
+                    <button class="btn btn-green" data-toggle="modal" data-target="#addPortfolioModal" type="button"><i class="fal fa-plus"></i></button>
                   </div>
                 </div>
                 <div class="portfolio-items d-flex justify-content-between">
@@ -248,8 +248,7 @@
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true"><i class="fal fa-times"></i></span>
           </button>
-          <div class="profile-cover-img" style="background: url(../../img/stationary_set_1600.jpg);">
-          </div>
+          <div class="profile-cover-img" style="background: url(../../img/stationary_set_1600.jpg);"></div>
           <div class="profile-preview-info">
             <div class="user-info">
               <div class="user-pic">
@@ -278,6 +277,7 @@
                   <span class="badge badge-skills">GARDENER</span>
                 </p>
               </div>
+              <hr>
             </div>
             <div class="profile-details">
               <div class="profile-title">
@@ -399,7 +399,7 @@
   <script>
     $(function () {
       $('[data-toggle="tooltip"]').tooltip();
-      $(".inputtags").val();
+      $('.inputtags').val();
     })
   </script>
 </body>

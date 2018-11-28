@@ -36,6 +36,21 @@
 
     .modal-body {
       padding: 1rem;
+      position: relative;
+
+      .close {
+        position: absolute;
+        right: -10px;
+        top: -12px;
+        background: $orombored;
+        margin: 0;
+        border-radius: 35px;
+        opacity: 1;
+        padding: 3px 6px 3px 7px;
+        font-size: 1rem;
+        color: white;
+        z-index: 999;
+      }
 
       p {
         margin: 1rem;
@@ -117,6 +132,7 @@
       .form-group {
         margin-bottom: 1rem !important;
       }
+
       .profile-portfolio {
         width: 100%;
 
@@ -128,23 +144,23 @@
           align-items: center;
           border-top: 2px solid rgba($orombogrey, .05);
           border-bottom: 2px solid rgba($orombogrey, .05);
-  
+
           h1 {
             font-size: 1rem;
             text-transform: uppercase;
             margin: 0;
           }
-  
+
           .add-portfolio-item {
             .btn-green {
               width: auto;
             }
           }
         }
-  
+
         .portfolio-items {
           margin-top: 1rem;
-  
+
           .portfolio-item {
             width: 24%;
             min-height: 100px;
@@ -152,14 +168,14 @@
             border: 2px dashed lighten($orombogrey, 60%);
             background: lighten($orombogrey, 70%);
             transition: ease .5s all;
-  
+
             &:hover {
               background: lighten($orombogrey, 65%);
               border-style: solid;
               text-align: center;
               vertical-align: middle;
               cursor: pointer;
-  
+
               &:before {
                 font-family: 'Font Awesome 5 Pro';
                 content: "\f055";
@@ -171,13 +187,196 @@
         }
       }
     }
+
+    &.profile-preview-modal {
+      background: lighten($orombogrey, 74.5%);
+
+      .modal-body {
+        padding: 0;
+      }
+
+      .profile-cover-img {
+        height: 200px;
+        background-size: cover !important;
+        background-position-y: center !important;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: ease .5s all;
+
+        i {
+          color: lighten($orombogrey, 50%);
+          font-size: 3rem;
+        }
+      }
+
+      .profile-preview-info {
+        padding: 0 1rem 1rem;
+        display: flex;
+        justify-content: space-between;
+
+        .user-info {
+          width: 300px;
+          background: white;
+          padding: 1rem;
+          border-bottom: 1px solid rgba($orombogrey, .2);
+
+          .user-pic {
+            margin: auto;
+            width: 50px;
+            height: 50px;
+            background: $orombogreen;
+            border-radius: 35px;
+            position: relative;
+            transition: ease .5s all;
+
+            img {
+              width: 50px;
+              height: 50px;
+              border-radius: 35px;
+            }
+
+            &:hover {
+              a {
+                background: rgba($oromboorange, .8);
+                color: white
+              }
+            }
+          }
+
+          .user-name {
+            margin-top: .5rem;
+            line-height: 1rem;
+
+            span {
+              text-transform: uppercase;
+
+              small {
+                text-transform: capitalize;
+              }
+            }
+          }
+
+          .rating {
+            color: $oromboorange;
+          }
+
+          .user-intro {
+            font-size: 0.875rem;
+
+            a {
+              color: $orombogreen;
+
+              &.btn {
+                color: white;
+              }
+            }
+          }
+
+          .user-skills {
+            h1 {
+              font-size: 0.875rem;
+              text-transform: uppercase;
+              font-weight: 500;
+            }
+          }
+        }
+
+        .profile-details {
+          padding-top: 1rem;
+          width: calc(100% - 300px);
+
+          .profile-title,
+          .profile-description,
+          .profile-portfolio {
+            padding: .75rem 1rem .75rem 2rem;
+          }
+
+          .profile-title {
+            border-bottom: 2px solid rgba($orombogrey, .05);
+
+            h1 {
+              font-size: 1.5rem;
+              text-transform: uppercase;
+              margin-bottom: 0;
+              font-weight: 300;
+            }
+          }
+
+          .profile-description {
+
+            p {
+              margin: 0;
+            }
+          }
+
+          .profile-portfolio {
+            width: 100%;
+
+            .portfolio-title {
+              padding-top: .75rem;
+              padding-bottom: .75rem;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              border-top: 2px solid rgba($orombogrey, .05);
+              border-bottom: 2px solid rgba($orombogrey, .05);
+
+              h1 {
+                font-size: 1rem;
+                text-transform: uppercase;
+                margin: 0;
+              }
+
+              .add-portfolio-item {
+                .btn-green {
+                  width: auto;
+                }
+              }
+            }
+
+            .portfolio-items {
+              margin-top: 1rem;
+              flex-wrap: wrap;
+
+              .portfolio-item {
+                width: 33%;
+                min-height: 100px;
+                border-radius: 0px;
+                border: 0;
+                margin-bottom: .5rem;
+
+                .card-img-top {
+                  border-radius: 0;
+                }
+
+                .card-body {
+                  margin-top: 0;
+                  padding: .5rem .75rem;
+
+                  .card-title {
+                    font-size: 1rem;
+
+                    a {
+                      color: $orombogrey;
+                    }
+                  }
+                }
+              }
+            }
+
+          }
+        }
+      }
+    }
   }
 
 }
 
 @media (min-width: 992px) {
 
-  .modal-lg {
-    // max-width: 1130px;
+  .modal-preview {
+    max-width: 1130px;
   }
 }

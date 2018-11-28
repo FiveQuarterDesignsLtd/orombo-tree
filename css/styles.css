@@ -300,6 +300,21 @@ body .modal-dialog .modal-content .modal-header .close {
 
 body .modal-dialog .modal-content .modal-body {
   padding: 1rem;
+  position: relative;
+}
+
+body .modal-dialog .modal-content .modal-body .close {
+  position: absolute;
+  right: -10px;
+  top: -12px;
+  background: #B7162A;
+  margin: 0;
+  border-radius: 35px;
+  opacity: 1;
+  padding: 3px 6px 3px 7px;
+  font-size: 1rem;
+  color: white;
+  z-index: 999;
 }
 
 body .modal-dialog .modal-content .modal-body p {
@@ -442,6 +457,204 @@ body .modal-dialog .modal-content.add-portfolio-modal .profile-portfolio .portfo
   content: "\f055";
   color: white;
   font-size: 2rem;
+}
+
+body .modal-dialog .modal-content.profile-preview-modal {
+  background: #f9f9f9;
+}
+
+body .modal-dialog .modal-content.profile-preview-modal .modal-body {
+  padding: 0;
+}
+
+body .modal-dialog .modal-content.profile-preview-modal .profile-cover-img {
+  height: 200px;
+  background-size: cover !important;
+  background-position-y: center !important;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: ease .5s all;
+  transition: ease .5s all;
+}
+
+body .modal-dialog .modal-content.profile-preview-modal .profile-cover-img i {
+  color: #bcbbb9;
+  font-size: 3rem;
+}
+
+body .modal-dialog .modal-content.profile-preview-modal .profile-preview-info {
+  padding: 0 1rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .modal-dialog .modal-content.profile-preview-modal .profile-preview-info .user-info {
+  width: 300px;
+  background: white;
+  padding: 1rem;
+  border-bottom: 1px solid rgba(60, 59, 58, 0.2);
+}
+
+body .modal-dialog .modal-content.profile-preview-modal .profile-preview-info .user-info .user-pic {
+  margin: auto;
+  width: 50px;
+  height: 50px;
+  background: #00A099;
+  border-radius: 35px;
+  position: relative;
+  -webkit-transition: ease .5s all;
+  transition: ease .5s all;
+}
+
+body .modal-dialog .modal-content.profile-preview-modal .profile-preview-info .user-info .user-pic img {
+  width: 50px;
+  height: 50px;
+  border-radius: 35px;
+}
+
+body .modal-dialog .modal-content.profile-preview-modal .profile-preview-info .user-info .user-pic:hover a {
+  background: rgba(241, 145, 0, 0.8);
+  color: white;
+}
+
+body .modal-dialog .modal-content.profile-preview-modal .profile-preview-info .user-info .user-name {
+  margin-top: .5rem;
+  line-height: 1rem;
+}
+
+body .modal-dialog .modal-content.profile-preview-modal .profile-preview-info .user-info .user-name span {
+  text-transform: uppercase;
+}
+
+body .modal-dialog .modal-content.profile-preview-modal .profile-preview-info .user-info .user-name span small {
+  text-transform: capitalize;
+}
+
+body .modal-dialog .modal-content.profile-preview-modal .profile-preview-info .user-info .rating {
+  color: #F19100;
+}
+
+body .modal-dialog .modal-content.profile-preview-modal .profile-preview-info .user-info .user-intro {
+  font-size: 0.875rem;
+}
+
+body .modal-dialog .modal-content.profile-preview-modal .profile-preview-info .user-info .user-intro a {
+  color: #00A099;
+}
+
+body .modal-dialog .modal-content.profile-preview-modal .profile-preview-info .user-info .user-intro a.btn {
+  color: white;
+}
+
+body .modal-dialog .modal-content.profile-preview-modal .profile-preview-info .user-info .user-skills h1 {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+body .modal-dialog .modal-content.profile-preview-modal .profile-preview-info .profile-details {
+  padding-top: 1rem;
+  width: calc(100% - 300px);
+}
+
+body .modal-dialog .modal-content.profile-preview-modal .profile-preview-info .profile-details .profile-title,
+body .modal-dialog .modal-content.profile-preview-modal .profile-preview-info .profile-details .profile-description,
+body .modal-dialog .modal-content.profile-preview-modal .profile-preview-info .profile-details .profile-portfolio {
+  padding: .75rem 1rem .75rem 2rem;
+}
+
+body .modal-dialog .modal-content.profile-preview-modal .profile-preview-info .profile-details .profile-title {
+  border-bottom: 2px solid rgba(60, 59, 58, 0.05);
+}
+
+body .modal-dialog .modal-content.profile-preview-modal .profile-preview-info .profile-details .profile-title h1 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  font-weight: 300;
+}
+
+body .modal-dialog .modal-content.profile-preview-modal .profile-preview-info .profile-details .profile-description p {
+  margin: 0;
+}
+
+body .modal-dialog .modal-content.profile-preview-modal .profile-preview-info .profile-details .profile-portfolio {
+  width: 100%;
+}
+
+body .modal-dialog .modal-content.profile-preview-modal .profile-preview-info .profile-details .profile-portfolio .portfolio-title {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: 2px solid rgba(60, 59, 58, 0.05);
+  border-bottom: 2px solid rgba(60, 59, 58, 0.05);
+}
+
+body .modal-dialog .modal-content.profile-preview-modal .profile-preview-info .profile-details .profile-portfolio .portfolio-title h1 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+body .modal-dialog .modal-content.profile-preview-modal .profile-preview-info .profile-details .profile-portfolio .portfolio-title .add-portfolio-item .btn-green {
+  width: auto;
+}
+
+body .modal-dialog .modal-content.profile-preview-modal .profile-preview-info .profile-details .profile-portfolio .portfolio-items {
+  margin-top: 1rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body .modal-dialog .modal-content.profile-preview-modal .profile-preview-info .profile-details .profile-portfolio .portfolio-items .portfolio-item {
+  width: 33%;
+  min-height: 100px;
+  border-radius: 0px;
+  border: 0;
+  margin-bottom: .5rem;
+}
+
+body .modal-dialog .modal-content.profile-preview-modal .profile-preview-info .profile-details .profile-portfolio .portfolio-items .portfolio-item .card-img-top {
+  border-radius: 0;
+}
+
+body .modal-dialog .modal-content.profile-preview-modal .profile-preview-info .profile-details .profile-portfolio .portfolio-items .portfolio-item .card-body {
+  margin-top: 0;
+  padding: .5rem .75rem;
+}
+
+body .modal-dialog .modal-content.profile-preview-modal .profile-preview-info .profile-details .profile-portfolio .portfolio-items .portfolio-item .card-body .card-title {
+  font-size: 1rem;
+}
+
+body .modal-dialog .modal-content.profile-preview-modal .profile-preview-info .profile-details .profile-portfolio .portfolio-items .portfolio-item .card-body .card-title a {
+  color: #3C3B3A;
+}
+
+@media (min-width: 992px) {
+  body .modal-preview {
+    max-width: 1130px;
+  }
 }
 
 /**********************

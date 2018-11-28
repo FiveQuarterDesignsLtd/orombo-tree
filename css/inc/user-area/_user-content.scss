@@ -8,6 +8,8 @@
     overflow-y: scroll;
     height: calc(100% - 183px);
 
+    @import 'jobs/_jobs';
+
     @import 'my-profiles/_my-profiles';
 
   }

@@ -183,22 +183,22 @@ body .dropdown .dropdown-menu .dropdown-item:last-of-type {
   border-bottom: 0;
 }
 
-body .form-group {
+body .form-group, body .input-group {
   margin: 0;
 }
 
-body .form-group .form-control:focus {
+body .form-group .form-control:focus, body .input-group .form-control:focus {
   outline: none;
   border-color: inherit;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
 
-body .form-group .form-text {
+body .form-group .form-text, body .input-group .form-text {
   font-style: italic;
 }
 
-body .form-group .ddl {
+body .form-group .ddl, body .input-group .ddl {
   position: relative;
   border: 1px solid #ccc;
   width: 100%;
@@ -206,30 +206,30 @@ body .form-group .ddl {
   overflow: hidden;
 }
 
-body .form-group .ddl .form-control {
+body .form-group .ddl .form-control, body .input-group .ddl .form-control {
   border: 0;
 }
 
-body .form-group .ddl .form-control option {
+body .form-group .ddl .form-control option, body .input-group .ddl .form-control option {
   padding-left: 1rem;
 }
 
-body .form-group .form-control {
+body .form-group .form-control, body .input-group .form-control {
   border-radius: 35px;
 }
 
-body .form-group textarea.form-control {
+body .form-group textarea.form-control, body .input-group textarea.form-control {
   border-radius: 15px;
 }
 
-body .form-group .input-group .input-group-text {
+body .form-group .input-group .input-group-text, body .input-group .input-group .input-group-text {
   border-top-left-radius: 35px;
   border-bottom-left-radius: 35px;
   background: none;
   border-right: 0;
 }
 
-body .form-group .input-group .form-control {
+body .form-group .input-group .form-control, body .input-group .input-group .form-control {
   border-left: 0;
   border-top-right-radius: 35px;
   border-bottom-right-radius: 35px;
@@ -1362,7 +1362,14 @@ main.user-area .user-content .page-title h1 {
   font-size: 1.5rem;
 }
 
+main.user-area .user-content .page-title h1 small {
+  color: #8a8885;
+  font-style: italic;
+  font-size: 1rem;
+}
+
 main.user-area .user-content .page-title .page-actions {
+  width: 40%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1374,9 +1381,25 @@ main.user-area .user-content .page-title .page-actions .dropdown .dropdown-menu 
   width: 250px;
 }
 
+main.user-area .user-content .page-title .page-actions .search-control {
+  border: 0;
+  background: #eeeeed;
+}
+
 main.user-area .user-content .page-title .page-actions .btn-new {
   width: auto;
   border-radius: 4px;
+}
+
+main.user-area .user-content .page-title .page-actions .btn-search {
+  width: auto;
+}
+
+main.user-area .user-content .page-title .page-actions .btn-categories {
+  width: auto;
+  border-radius: 0;
+  padding-top: 7px;
+  padding-bottom: 7px;
 }
 
 main.user-area .user-content .page-content {

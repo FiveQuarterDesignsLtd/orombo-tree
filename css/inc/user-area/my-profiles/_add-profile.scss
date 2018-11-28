@@ -14,7 +14,11 @@
   }
 
   span {
-    color: lighten($orombogrey, 50%);
+    color: lighten($orombogrey, 30%);
+  }
+
+  #profile-cover-control {
+    display: none;
   }
 
   &:hover {

@@ -1475,7 +1475,11 @@ main.user-area .user-content .page-content.my-profiles .profile-cover-img i {
 }
 
 main.user-area .user-content .page-content.my-profiles .profile-cover-img span {
-  color: #bcbbb9;
+  color: #8a8885;
+}
+
+main.user-area .user-content .page-content.my-profiles .profile-cover-img #profile-cover-control {
+  display: none;
 }
 
 main.user-area .user-content .page-content.my-profiles .profile-cover-img:hover {

@@ -219,39 +219,68 @@
                 <div class="portfolio-title">
                   <h1>Profile Portfolio</h1>
                   <div class="add-portfolio-item" data-toggle="tooltip" data-placement="left" title="Add Portfolio Item">
-                    <button class="btn btn-green"><i class="fal fa-plus"></i></button>
+                    <button class="btn btn-green" data-toggle="modal" data-target="#addPortfolioModal"><i class="fal fa-plus"></i></button>
                   </div>
                 </div>
                 <div class="portfolio-items d-flex justify-content-between">
-                  <div class="portfolio-item"></div>
-                  <div class="portfolio-item"></div>
-                  <div class="portfolio-item"></div>
-                  <div class="portfolio-item"></div>
+                  <div class="portfolio-item" data-toggle="modal" data-target="#addPortfolioModal"></div>
+                  <div class="portfolio-item" data-toggle="modal" data-target="#addPortfolioModal"></div>
+                  <div class="portfolio-item" data-toggle="modal" data-target="#addPortfolioModal"></div>
+                  <div class="portfolio-item" data-toggle="modal" data-target="#addPortfolioModal"></div>
                 </div>
               </div>
             </form>
           </div>
-          <!-- <form action="">
-            <div class="form-group pb-3">
-              <label for="txtProfileTitle" class="sr-only">Profile title</label>
-              <input type="text" class="form-control" id="txtProfileTitle" aria-describedby="profileTitle" placeholder="What's your profile title?">
-              <small id="emailHelp" class="form-text text-muted">e.g. Name of the company this profile will represent</small>
-            </div>
-            <div class="form-group pb-3">
-              <label for="txtProfileDescription" class="sr-only">What do you need from the Buyer to get started?</label>
-              <textarea name="" id="txtProfileDescription" rows="5" class="form-control" placeholder="Add the profile description. Describe what this profile is being used for with any relevant information."></textarea>
-            </div>
-            <div class="form-group pb-3">
-              <label for="txtTags" class="sr-only">Skills</label>
-              <input type="text" class="form-control" id="txtTags" aria-describedby="profileTitle" value="" data-role="tagsinput"
-                placeholder="Put your skills here">
-              <small id="emailHelp" class="form-text text-muted">Separate your skills with a comma</small>
-            </div>
-          </form> -->
         </div>
       </div>
     </div>
   </main>
+
+  <!-- Add Portfolio -->
+  <div class="modal fade" id="addPortfolioModal" tabindex="-1" role="dialog" aria-labelledby="addPortfolioModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content add-portfolio-modal">
+        <div class="modal-header">
+          <h5 class="modal-title" id="addPortfolioModalLabel">Add Portfolio</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"><i class="fal fa-times"></i></span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form action="">
+            <div class="form-group">
+              <label for="">Portfolio Item Title</label>
+              <input type="text" class="form-control" placeholder="Add your item's title">
+            </div>
+            <div class="form-group">
+              <label for="">Portfolio Item Description</label>
+              <textarea name="" id="" rows="5" class="form-control" placeholder="What did you do?"></textarea>
+            </div>
+            <div class="form-group">
+              <label for="">Skills you used</label>
+              <input type="text" class="form-control inputtags" placeholder="Add commas to separate" data-role="tagsinput" value="Graphics">
+            </div>
+            <div class="profile-portfolio">
+              <div class="portfolio-title">
+                <h1>Add Portfolio Images</h1>
+                <div class="add-portfolio-item" data-toggle="tooltip" data-placement="left" title="Add Portfolio Image">
+                  <button class="btn btn-green" ><i class="fal fa-plus"></i></button>
+                </div>
+              </div>
+              <div class="portfolio-items d-flex justify-content-between">
+                <div class="portfolio-item"></div>
+                <div class="portfolio-item"></div>
+                <div class="portfolio-item"></div>
+                <div class="portfolio-item"></div>
+              </div>
+            </div>
+            <p class="text-center"><button type="button" class="btn btn-green">Save changes</button></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -264,7 +293,8 @@
   <script src="../../js/bootstrap-tagsinput.js"></script>
   <script>
     $(function () {
-      $('[data-toggle="tooltip"]').tooltip()
+      $('[data-toggle="tooltip"]').tooltip();
+      $(".inputtags").val();
     })
   </script>
 </body>

@@ -262,19 +262,48 @@ body .card .card-body .card-title {
   text-transform: uppercase;
 }
 
+body .modal-dialog .modal-content {
+  border-radius: 0;
+  border: 0;
+}
+
+body .modal-dialog .modal-content .modal-header {
+  border-radius: 0;
+  position: relative;
+  background: #eeeeed;
+}
+
 body .modal-dialog .modal-content .modal-header .modal-title {
   margin: 0;
   font-weight: 300;
   font-size: 1.5rem;
   line-height: 1.75rem;
+  text-transform: uppercase;
 }
 
 body .modal-dialog .modal-content .modal-header .modal-title small {
   color: #a3a19f;
 }
 
+body .modal-dialog .modal-content .modal-header .close {
+  position: absolute;
+  right: -10px;
+  top: -12px;
+  background: #B7162A;
+  margin: 0;
+  border-radius: 35px;
+  opacity: 1;
+  padding: 3px 6px 3px 7px;
+  font-size: 1rem;
+  color: white;
+}
+
 body .modal-dialog .modal-content .modal-body {
-  padding: 0;
+  padding: 1rem;
+}
+
+body .modal-dialog .modal-content .modal-body p {
+  margin: 1rem;
 }
 
 body .modal-dialog .modal-content .modal-body .row {
@@ -352,10 +381,67 @@ body .modal-dialog .modal-content .modal-body .tips ol {
   padding-left: 11px;
 }
 
-@media (min-width: 992px) {
-  body .modal-lg {
-    max-width: 1130px;
-  }
+body .modal-dialog .modal-content.add-portfolio-modal .form-group {
+  margin-bottom: 1rem !important;
+}
+
+body .modal-dialog .modal-content.add-portfolio-modal .profile-portfolio {
+  width: 100%;
+}
+
+body .modal-dialog .modal-content.add-portfolio-modal .profile-portfolio .portfolio-title {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: 2px solid rgba(60, 59, 58, 0.05);
+  border-bottom: 2px solid rgba(60, 59, 58, 0.05);
+}
+
+body .modal-dialog .modal-content.add-portfolio-modal .profile-portfolio .portfolio-title h1 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+body .modal-dialog .modal-content.add-portfolio-modal .profile-portfolio .portfolio-title .add-portfolio-item .btn-green {
+  width: auto;
+}
+
+body .modal-dialog .modal-content.add-portfolio-modal .profile-portfolio .portfolio-items {
+  margin-top: 1rem;
+}
+
+body .modal-dialog .modal-content.add-portfolio-modal .profile-portfolio .portfolio-items .portfolio-item {
+  width: 24%;
+  min-height: 100px;
+  border-radius: 5px;
+  border: 2px dashed #d5d4d3;
+  background: #eeeeed;
+  -webkit-transition: ease .5s all;
+  transition: ease .5s all;
+}
+
+body .modal-dialog .modal-content.add-portfolio-modal .profile-portfolio .portfolio-items .portfolio-item:hover {
+  background: #e1e1e0;
+  border-style: solid;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+body .modal-dialog .modal-content.add-portfolio-modal .profile-portfolio .portfolio-items .portfolio-item:hover:before {
+  font-family: 'Font Awesome 5 Pro';
+  content: "\f055";
+  color: white;
+  font-size: 2rem;
 }
 
 /**********************

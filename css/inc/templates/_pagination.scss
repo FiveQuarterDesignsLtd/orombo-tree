@@ -1,0 +1,29 @@
+.pagination {
+  .page-item {
+    &.active {
+      .page-link {
+        background: $oromboorange;
+        border-color: $oromboorange;
+        color: white;
+      }
+    }
+    &.disabled {
+      .page-link {
+        background: lighten($orombogrey, 70%);
+        border-color: lighten($orombogrey, 70%);
+        color: lighten($orombogrey, 40%);
+      }
+    }
+    .page-link {
+      color: $orombogrey;
+      &.page-previous {
+        border-top-left-radius: 35px;
+        border-bottom-left-radius: 35px;
+      }
+      &.page-next {
+        border-top-right-radius: 35px;
+        border-bottom-right-radius: 35px;
+      }
+    }
+  }
+}

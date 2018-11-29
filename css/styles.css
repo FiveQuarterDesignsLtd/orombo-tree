@@ -667,6 +667,32 @@ body .badge-skills {
   border-radius: 2px;
 }
 
+body .pagination .page-item.active .page-link {
+  background: #F19100;
+  border-color: #F19100;
+  color: white;
+}
+
+body .pagination .page-item.disabled .page-link {
+  background: #eeeeed;
+  border-color: #eeeeed;
+  color: #a3a19f;
+}
+
+body .pagination .page-item .page-link {
+  color: #3C3B3A;
+}
+
+body .pagination .page-item .page-link.page-previous {
+  border-top-left-radius: 35px;
+  border-bottom-left-radius: 35px;
+}
+
+body .pagination .page-item .page-link.page-next {
+  border-top-right-radius: 35px;
+  border-bottom-right-radius: 35px;
+}
+
 /**********************
   NAVBAR 
 ***********************/
@@ -1406,6 +1432,118 @@ main.user-area .user-content .page-content {
   padding: .75rem 1rem .75rem 2.5rem;
   overflow-y: scroll;
   height: calc(100% - 183px);
+}
+
+main.user-area .user-content .page-content.jobs .jobs-list .job-item {
+  padding: 1rem;
+  background: white;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #eeeeed;
+}
+
+main.user-area .user-content .page-content.jobs .jobs-list .job-item .job-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main.user-area .user-content .page-content.jobs .jobs-list .job-item .job-details .job-title {
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+
+main.user-area .user-content .page-content.jobs .jobs-list .job-item .job-details .job-title a {
+  color: #F19100;
+  -webkit-transition: ease .5s all;
+  transition: ease .5s all;
+}
+
+main.user-area .user-content .page-content.jobs .jobs-list .job-item .job-details .job-title a:hover {
+  text-decoration: none;
+  color: #00A099;
+}
+
+main.user-area .user-content .page-content.jobs .jobs-list .job-item .job-details .job-title .job-meta {
+  margin-top: .15rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main.user-area .user-content .page-content.jobs .jobs-list .job-item .job-details .job-title .job-meta .meta-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0.75rem;
+  color: #a3a19f;
+}
+
+main.user-area .user-content .page-content.jobs .jobs-list .job-item .job-details .job-title .job-meta .meta-item:last-of-type::after {
+  content: '';
+  margin-left: 0;
+  margin-right: 0;
+}
+
+main.user-area .user-content .page-content.jobs .jobs-list .job-item .job-details .job-title .job-meta .meta-item::after {
+  content: '|';
+  margin-left: .25rem;
+  margin-right: .25rem;
+}
+
+main.user-area .user-content .page-content.jobs .jobs-list .job-item .job-details .job-title .job-meta .meta-item i {
+  margin-right: .25rem;
+}
+
+main.user-area .user-content .page-content.jobs .jobs-list .job-item .job-details .job-actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main.user-area .user-content .page-content.jobs .jobs-list .job-item .job-details .job-actions .job-price {
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+main.user-area .user-content .page-content.jobs .jobs-list .job-item .job-details .job-actions .job-btn {
+  margin-left: 1rem;
+}
+
+main.user-area .user-content .page-content.jobs .jobs-list .job-item .job-details .job-actions .job-btn .btn-details {
+  width: auto;
+}
+
+main.user-area .user-content .page-content.jobs .jobs-list .job-item .job-desc {
+  margin-top: .5rem;
+  font-size: .875rem;
+}
+
+main.user-area .user-content .page-content.jobs .job-pagination {
+  margin-top: 1rem;
 }
 
 main.user-area .user-content .page-content.my-profiles .card {
